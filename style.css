@@ -1,0 +1,224 @@
+/* Importando uma fonte do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* ----- ESTILOS GERAIS ----- */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+/* ----- CONTAINER PRINCIPAL ----- */
+.portfolio-container {
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  max-width: 900px;
+  width: 100%;
+  border-top: 5px solid #007bff;
+}
+
+/* ----- CABEÇALHO ----- */
+.header-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #007bff;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2em;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 25px;
+  margin-top: 15px;
+  color: #b0b0b0;
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+/* ----- SEÇÕES DE CONTEÚDO ----- */
+.content-section,
+.footer-section {
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+h2 i {
+  color: #007bff;
+}
+
+/* ----- CARDS (PARA EXPERIÊNCIA, PROJETOS, FORMAÇÃO) ----- */
+.card {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid #007bff;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #e0e0e0;
+  font-size: 1.2em;
+}
+
+.card h4 {
+  margin: 0;
+  font-size: 0.9em;
+  color: #b0b0b0;
+  font-weight: 400;
+}
+
+.card p {
+  margin: 10px 0 0;
+}
+
+.card ul {
+  padding-left: 20px;
+  margin: 10px 0 0;
+}
+
+.card li {
+  margin-bottom: 5px;
+}
+
+/* ==================== CÓDIGO ADICIONADO AQUI ==================== */
+/* ----- ESTILO PARA LINKS DENTRO DOS CARDS ----- */
+.card a {
+  color: #007bff; /* Define a cor do link para o azul principal do tema */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  font-weight: 500; /* Deixa o texto com um peso médio para se destacar */
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.card a:hover {
+  color: #4da3ff; /* Deixa o link um pouco mais claro ao passar o mouse */
+  text-decoration: underline; /* Adiciona o sublinhado no hover para feedback visual */
+}
+/* ==================== FIM DO CÓDIGO ADICIONADO ==================== */
+
+/* ----- HABILIDADES TÉCNICAS ----- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.skill-category h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #007bff;
+  font-size: 1.1em;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list li {
+  background-color: #333;
+  color: #e0e0e0;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+/* ----- RODAPÉ E LINKS SOCIAIS ----- */
+.footer-section {
+  text-align: center;
+}
+
+.social-links a {
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 5px 10px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.social-links i {
+  margin-right: 8px;
+}
+
+/* ----- RESPONSIVIDADE PARA CELULARES ----- */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .portfolio-container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
