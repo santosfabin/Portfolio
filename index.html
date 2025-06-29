@@ -50,7 +50,52 @@
       <!-- ==================== PORTFÓLIO DE PROJETOS ==================== -->
       <section class="content-section">
         <h2><i class="fa-solid fa-lightbulb"></i> Portfólio de Projetos</h2>
-        <!-- ==================== NOVO PROJETO ADICIONADO AQUI ==================== -->
+
+        <!-- ==================== PROJETO GARIMPO CORRIGIDO E SEM CARROSSEL ==================== -->
+        <div class="card">
+          <h3>Garimpo - Assistente de Cinema com IA ⛏️</h3>
+          <p>
+            Uma aplicação full-stack que funciona como um assistente de cinema inteligente. O
+            sistema permite conversar com uma IA (GPT-4o) para obter recomendações de filmes,
+            descobrir novos títulos e ver detalhes de produções, com respostas geradas em tempo real
+            usando Server-Sent Events (SSE).
+          </p>
+          <ul>
+            <li><strong>Frontend:</strong> React, Vite e TypeScript.</li>
+            <li>
+              <strong>Backend:</strong> Node.js, Express, LangChain.js e SSE para comunicação
+              real-time.
+            </li>
+            <li><strong>IA & Dados:</strong> OpenAI (GPT-4o) e TMDB API.</li>
+            <li><strong>Banco de Dados:</strong> PostgreSQL.</li>
+            <li><strong>Ambiente:</strong> Orquestração completa com Docker e Docker Compose.</li>
+            <li>
+              <strong>Repositório:</strong>
+              <a href="https://github.com/santosfabin/Garimpo" target="_blank">GitHub</a>
+            </li>
+          </ul>
+          <div class="carousel">
+            <div class="carousel-track">
+              <img src="assets/Garimpo/garimpo-01-welcome.png" alt="Tela Welcome do Garimpo" />
+              <img src="assets/Garimpo/garimpo-02-status.png" alt="Tela Status do Garimpo" />
+              <img src="assets/Garimpo/garimpo-03-reasoning.png" alt="Tela Reasoning do Garimpo" />
+              <img src="assets/Garimpo/garimpo-04-learning.png" alt="Tela Learning do Garimpo" />
+              <img
+                src="assets/Garimpo/garimpo-05-recommendation.png"
+                alt="Tela Recommendation do Garimpo"
+              />
+              <img src="assets/Garimpo/garimpo-06-history.png" alt="Tela History do Garimpo" />
+            </div>
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+          </div>
+        </div>
+        <!-- Modal de Imagem -->
+        <div id="image-modal" class="image-modal">
+          <span class="close-modal">&times;</span>
+          <img class="modal-content" id="modal-img" alt="Imagem ampliada" />
+        </div>
+
         <div class="card">
           <h3>API de Autenticação com Docker</h3>
           <p>
@@ -159,7 +204,7 @@
           </ul>
         </div>
         <div class="card">
-          <h3>BeeSocy: Agregador de Redes Sociais</h3>
+          <h3>BeeSocy - Agregador de Redes Sociais</h3>
           <p>
             Plataforma web projetada para centralizar e organizar múltiplos perfis de redes sociais
             e de conteúdo em uma única página, simplificando o compartilhamento.
@@ -320,18 +365,6 @@
       </footer>
     </main>
 
-    <!-- Script para carregar dinamicamente a imagem de perfil do GitHub -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const githubUsername = 'santosfabin';
-        const imgElement = document.getElementById('profile-pic-img');
-
-        if (imgElement) {
-          const baseUrl = `https://github.com/${githubUsername}.png`;
-          const cacheBuster = `?t=${new Date().getTime()}`;
-          imgElement.src = baseUrl + cacheBuster;
-        }
-      });
-    </script>
+    <script src="script.js" defer></script>
   </body>
 </html>
