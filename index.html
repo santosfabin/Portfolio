@@ -39,10 +39,12 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="site-nav__links" id="nav-menu">
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#experiencia">Experiência</a></li>
-          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#estudos">Estudos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
         <div class="site-nav__actions">
@@ -85,247 +87,6 @@
           <a href="#contato" class="btn btn--ghost">Fale comigo</a>
         </div>
       </header>
-
-      <!-- Sobre -->
-      <section
-        class="section section--about"
-        id="sobre"
-        aria-labelledby="sobre-titulo"
-      >
-        <div class="about-intro">
-          <img
-            id="profile-pic-img"
-            src=""
-            alt=""
-            class="about-intro__photo"
-            width="120"
-            height="120"
-          />
-          <div class="about-intro__text">
-            <h2 id="sobre-titulo" class="section__title">Sobre</h2>
-            <p class="section__lead">
-              Olá, sou <strong>Fabiano Vieira dos Santos</strong>. Trabalho há
-              anos no ecossistema JavaScript, do front ao back: interfaces
-              responsivas, integrações e APIs estáveis. Valorizo código claro,
-              testes quando fazem sentido e entrega contínua junto ao time.
-            </p>
-          </div>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <h3 class="feature-card__title">Código limpo</h3>
-            <p class="feature-card__text">
-              Estrutura legível, TypeScript e padrões que facilitam manutenção e
-              evolução do produto.
-            </p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">
-              <i class="fa-solid fa-layer-group"></i>
-            </div>
-            <h3 class="feature-card__title">Stack moderna</h3>
-            <p class="feature-card__text">
-              React, Node.js, NestJS e ferramentas atuais para web rápida e
-              confiável.
-            </p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">
-              <i class="fa-solid fa-link"></i>
-            </div>
-            <h3 class="feature-card__title">Integrações</h3>
-            <p class="feature-card__text">
-              APIs REST, pagamentos (Stripe, AbacatePay) e comunicação sólida
-              entre camadas.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- Habilidades -->
-      <section
-        class="section section--skills"
-        id="habilidades"
-        aria-labelledby="skills-titulo"
-      >
-        <div class="skills-layout">
-          <div class="skills-intro">
-            <h2 id="skills-titulo" class="section__title">
-              Habilidades técnicas
-            </h2>
-            <p class="section__lead">
-              Experiência no desenvolvimento de aplicações full-stack, atuando
-              em interfaces modernas, APIs REST e integrações entre front-end e
-              back-end. Foco em código escalável, manutenção e entrega funcional
-              de produtos.
-            </p>
-          </div>
-
-          <div class="skills-matrix">
-            <div class="skill-panel">
-              <h3 class="skill-panel__label">Frontend</h3>
-              <div class="skill-pills">
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>JavaScript</span>
-                <span>Tailwind CSS</span>
-                <span>Redux</span>
-                <span>Context API</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Responsividade</span>
-              </div>
-            </div>
-
-            <div class="skill-panel">
-              <h3 class="skill-panel__label">Backend</h3>
-              <div class="skill-pills">
-                <span>Node.js</span>
-                <span>Express</span>
-                <span>NestJS</span>
-                <span>APIs REST</span>
-                <span>Laravel</span>
-                <span>PostgreSQL</span>
-                <span>JWT</span>
-              </div>
-            </div>
-
-            <div class="skill-panel">
-              <h3 class="skill-panel__label">Infraestrutura & Ferramentas</h3>
-              <div class="skill-pills">
-                <span>Git</span>
-                <span>Docker</span>
-                <span>Linux</span>
-                <span>Playwright</span>
-                <span>Stripe</span>
-                <span>AbacatePay</span>
-              </div>
-            </div>
-
-            <div class="skill-panel">
-              <h3 class="skill-panel__label">Conhecimentos complementares</h3>
-              <div class="skill-pills">
-                <span>Testes automatizados</span>
-                <span>Redis</span>
-                <span>Python</span>
-                <span>Redes</span>
-              </div>
-            </div>
-
-            <div class="skill-panel">
-              <h3 class="skill-panel__label">Em estudo</h3>
-              <div class="skill-pills">
-                <span>Inglês (intermediário)</span>
-                <span>C# / .NET</span>
-                <span>LLMs e IA aplicada</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experiência -->
-      <section
-        class="section section--experience"
-        id="experiencia"
-        aria-labelledby="exp-titulo"
-      >
-        <h2 id="exp-titulo" class="section__title section__title--center">
-          Experiência profissional
-        </h2>
-        <div class="timeline">
-          <div class="timeline__line" aria-hidden="true"></div>
-
-          <article class="timeline-item timeline-item--right">
-            <div class="timeline-node" aria-hidden="true"></div>
-            <div class="exp-card">
-              <div class="exp-card__head">
-                <h3 class="exp-card__title">Desenvolvedor Full-Stack</h3>
-                <span class="exp-card__date">Out 2025 — Atual</span>
-              </div>
-              <p class="exp-card__company">Plumaa</p>
-              <p class="exp-card__desc">
-                Atuação no front-end em React/TypeScript, com implementação de
-                interface responsiva usando Tailwind e gerenciamento de estado
-                com Redux. Desenvolvimento de rotas com controle de acesso por
-                perfil e atuação no back-end com NestJS, contribuindo na criação
-                e manutenção de endpoints. Apoio na automação de fluxos com
-                Playwright.
-              </p>
-              <div class="exp-card__tags">
-                <span>React</span><span>TypeScript</span><span>Tailwind</span
-                ><span>Redux</span><span>NestJS</span><span>Playwright</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item timeline-item--left">
-            <div class="timeline-node" aria-hidden="true"></div>
-            <div class="exp-card">
-              <div class="exp-card__head">
-                <h3 class="exp-card__title">
-                  Full-Stack Freelance (Part-time)
-                </h3>
-                <span class="exp-card__date">Ago — Set 2025</span>
-              </div>
-              <p class="exp-card__company">OnMind</p>
-              <p class="exp-card__desc">
-                Atuação no front-end em React, realizando correções e melhorias
-                em funcionalidades existentes. Desenvolvimento e integração de
-                APIs no back-end para complementar funcionalidades e garantir a
-                comunicação entre as camadas da aplicação.
-              </p>
-              <div class="exp-card__tags">
-                <span>React</span><span>TypeScript</span><span>APIs REST</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item timeline-item--right">
-            <div class="timeline-node" aria-hidden="true"></div>
-            <div class="exp-card">
-              <div class="exp-card__head">
-                <h3 class="exp-card__title">Desenvolvedor Front-End</h3>
-                <span class="exp-card__date">Jul — Set 2025</span>
-              </div>
-              <p class="exp-card__company">Plati Ai</p>
-              <p class="exp-card__desc">
-                Correção de bugs em produção e manutenção da interface em React
-                durante o ciclo de desenvolvimento. Participação na migração
-                para uma nova API, ajustando integrações e garantindo a
-                estabilidade da aplicação.
-              </p>
-              <div class="exp-card__tags">
-                <span>React</span><span>TypeScript</span><span>APIs REST</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item timeline-item--left">
-            <div class="timeline-node" aria-hidden="true"></div>
-            <div class="exp-card">
-              <div class="exp-card__head">
-                <h3 class="exp-card__title">Desenvolvedor Back-End</h3>
-                <span class="exp-card__date">Mai — Jul 2025</span>
-              </div>
-              <p class="exp-card__company">
-                Alpha Digital — Instituto Alpha Lumen (Alpha EdTech)
-              </p>
-              <p class="exp-card__desc">
-                Implementação de melhorias na API Laravel, com foco em paginação
-                e estruturação de dados nos endpoints, visando otimizar o
-                consumo pelo front-end.
-              </p>
-              <div class="exp-card__tags">
-                <span>PHP</span><span>Laravel</span><span>SQL</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
 
       <!-- Projetos -->
       <section
@@ -619,10 +380,251 @@
         </div>
       </section>
 
+      <!-- Experiência -->
+      <section
+        class="section section--experience"
+        id="experiencia"
+        aria-labelledby="exp-titulo"
+      >
+        <h2 id="exp-titulo" class="section__title section__title--center">
+          Experiência profissional
+        </h2>
+        <div class="timeline">
+          <div class="timeline__line" aria-hidden="true"></div>
+
+          <article class="timeline-item timeline-item--right">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="exp-card">
+              <div class="exp-card__head">
+                <h3 class="exp-card__title">Desenvolvedor Full-Stack</h3>
+                <span class="exp-card__date">Out 2025 — Atual</span>
+              </div>
+              <p class="exp-card__company">Plumaa</p>
+              <p class="exp-card__desc">
+                Atuação no front-end em React/TypeScript, com implementação de
+                interface responsiva usando Tailwind e gerenciamento de estado
+                com Redux. Desenvolvimento de rotas com controle de acesso por
+                perfil e atuação no back-end com NestJS, contribuindo na criação
+                e manutenção de endpoints. Apoio na automação de fluxos com
+                Playwright.
+              </p>
+              <div class="exp-card__tags">
+                <span>React</span><span>TypeScript</span><span>Tailwind</span
+                ><span>Redux</span><span>NestJS</span><span>Playwright</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-item--left">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="exp-card">
+              <div class="exp-card__head">
+                <h3 class="exp-card__title">
+                  Full-Stack Freelance (Part-time)
+                </h3>
+                <span class="exp-card__date">Ago — Set 2025</span>
+              </div>
+              <p class="exp-card__company">OnMind</p>
+              <p class="exp-card__desc">
+                Atuação no front-end em React, realizando correções e melhorias
+                em funcionalidades existentes. Desenvolvimento e integração de
+                APIs no back-end para complementar funcionalidades e garantir a
+                comunicação entre as camadas da aplicação.
+              </p>
+              <div class="exp-card__tags">
+                <span>React</span><span>TypeScript</span><span>APIs REST</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-item--right">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="exp-card">
+              <div class="exp-card__head">
+                <h3 class="exp-card__title">Desenvolvedor Front-End</h3>
+                <span class="exp-card__date">Jul — Set 2025</span>
+              </div>
+              <p class="exp-card__company">Plati Ai</p>
+              <p class="exp-card__desc">
+                Correção de bugs em produção e manutenção da interface em React
+                durante o ciclo de desenvolvimento. Participação na migração
+                para uma nova API, ajustando integrações e garantindo a
+                estabilidade da aplicação.
+              </p>
+              <div class="exp-card__tags">
+                <span>React</span><span>TypeScript</span><span>APIs REST</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-item--left">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="exp-card">
+              <div class="exp-card__head">
+                <h3 class="exp-card__title">Desenvolvedor Back-End</h3>
+                <span class="exp-card__date">Mai — Jul 2025</span>
+              </div>
+              <p class="exp-card__company">
+                Alpha Digital — Instituto Alpha Lumen (Alpha EdTech)
+              </p>
+              <p class="exp-card__desc">
+                Implementação de melhorias na API Laravel, com foco em paginação
+                e estruturação de dados nos endpoints, visando otimizar o
+                consumo pelo front-end.
+              </p>
+              <div class="exp-card__tags">
+                <span>PHP</span><span>Laravel</span><span>SQL</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sobre -->
+      <section
+        class="section section--about"
+        id="sobre"
+        aria-labelledby="sobre-titulo"
+      >
+        <div class="about-intro">
+          <img
+            id="profile-pic-img"
+            src=""
+            alt=""
+            class="about-intro__photo"
+            width="120"
+            height="120"
+          />
+          <div class="about-intro__text">
+            <h2 id="sobre-titulo" class="section__title">Sobre</h2>
+            <p class="section__lead">
+              Olá, sou <strong>Fabiano Vieira dos Santos</strong>. Trabalho há
+              anos no ecossistema JavaScript, do front ao back: interfaces
+              responsivas, integrações e APIs estáveis. Valorizo código claro,
+              testes quando fazem sentido e entrega contínua junto ao time.
+            </p>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="feature-card__title">Código limpo</h3>
+            <p class="feature-card__text">
+              Estrutura legível, TypeScript e padrões que facilitam manutenção e
+              evolução do produto.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h3 class="feature-card__title">Stack moderna</h3>
+            <p class="feature-card__text">
+              React, Node.js, NestJS e ferramentas atuais para web rápida e
+              confiável.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-link"></i>
+            </div>
+            <h3 class="feature-card__title">Integrações</h3>
+            <p class="feature-card__text">
+              APIs REST, pagamentos (Stripe, AbacatePay) e comunicação sólida
+              entre camadas.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Habilidades -->
+      <section
+        class="section section--skills"
+        id="habilidades"
+        aria-labelledby="skills-titulo"
+      >
+        <div class="skills-layout">
+          <div class="skills-intro">
+            <h2 id="skills-titulo" class="section__title">
+              Habilidades técnicas
+            </h2>
+            <p class="section__lead">
+              Experiência no desenvolvimento de aplicações full-stack, atuando
+              em interfaces modernas, APIs REST e integrações entre front-end e
+              back-end. Foco em código escalável, manutenção e entrega funcional
+              de produtos.
+            </p>
+          </div>
+
+          <div class="skills-matrix">
+            <div class="skill-panel">
+              <h3 class="skill-panel__label">Frontend</h3>
+              <div class="skill-pills">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>JavaScript</span>
+                <span>Tailwind CSS</span>
+                <span>Redux</span>
+                <span>Context API</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsividade</span>
+              </div>
+            </div>
+
+            <div class="skill-panel">
+              <h3 class="skill-panel__label">Backend</h3>
+              <div class="skill-pills">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>NestJS</span>
+                <span>APIs REST</span>
+                <span>Laravel</span>
+                <span>PostgreSQL</span>
+                <span>JWT</span>
+              </div>
+            </div>
+
+            <div class="skill-panel">
+              <h3 class="skill-panel__label">Infraestrutura & Ferramentas</h3>
+              <div class="skill-pills">
+                <span>Git</span>
+                <span>Docker</span>
+                <span>Linux</span>
+                <span>Playwright</span>
+                <span>Stripe</span>
+                <span>AbacatePay</span>
+              </div>
+            </div>
+
+            <div class="skill-panel">
+              <h3 class="skill-panel__label">Conhecimentos complementares</h3>
+              <div class="skill-pills">
+                <span>Testes automatizados</span>
+                <span>Redis</span>
+                <span>Python</span>
+                <span>Redes</span>
+              </div>
+            </div>
+
+            <div class="skill-panel">
+              <h3 class="skill-panel__label">Em estudo</h3>
+              <div class="skill-pills">
+                <span>Inglês (intermediário)</span>
+                <span>C# / .NET</span>
+                <span>LLMs e IA aplicada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Formação -->
       <section
         class="section section--education"
-        id="formacao"
+        id="estudos"
         aria-labelledby="edu-titulo"
       >
         <h2 id="edu-titulo" class="section__title section__title--center">
@@ -640,6 +642,86 @@
           <div class="education-card">
             <h3>Programação</h3>
             <p>Alpha EdTech · Out 2024 — Out 2025</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Estudos -->
+      <section
+        class="section section--books"
+        id="estudos"
+        aria-labelledby="books-titulo"
+      >
+        <h2 id="books-titulo" class="section__title section__title--center">
+          Estudos e leitura
+        </h2>
+
+        <p class="section__subtitle">
+          Livros que estou utilizando para evoluir em arquitetura, sistemas e
+          boas práticas de desenvolvimento.
+        </p>
+
+        <!-- Lendo agora -->
+        <div class="books-block">
+          <h3 class="books-block__title">Lendo agora</h3>
+
+          <div class="books-grid">
+            <article class="book-card book-card--highlight">
+              <div class="book-card__cover">
+                <img
+                  src="assets/books/programador-pragmatico.jpg"
+                  alt="O Programador Pragmático"
+                />
+              </div>
+
+              <div class="book-card__content">
+                <strong>O Programador Pragmático</strong>
+                <span>Andrew Hunt & David Thomas</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Próximos -->
+        <div class="books-block">
+          <h3 class="books-block__title">Próximos estudos</h3>
+
+          <div class="books-grid">
+            <article class="book-card">
+              <div class="book-card__cover">
+                <img
+                  src="assets/books/clean-architecture.jpg"
+                  alt="Clean Architecture"
+                />
+              </div>
+              <div class="book-card__content">
+                <strong>Clean Architecture</strong>
+                <span>Robert C. Martin</span>
+              </div>
+            </article>
+
+            <article class="book-card">
+              <div class="book-card__cover">
+                <img
+                  src="assets/books/system-design.jpg"
+                  alt="System Design Interview"
+                />
+              </div>
+              <div class="book-card__content">
+                <strong>System Design Interview</strong>
+                <span>Alex Xu</span>
+              </div>
+            </article>
+
+            <article class="book-card">
+              <div class="book-card__cover">
+                <img src="assets/books/ddd.jpg" alt="Domain-Driven Design" />
+              </div>
+              <div class="book-card__content">
+                <strong>Domain-Driven Design</strong>
+                <span>Eric Evans</span>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -715,10 +797,12 @@
           ><span class="site-logo__prompt">&gt;_</span> santosfabin</a
         >
         <nav class="site-footer__nav" aria-label="Rodapé">
+          <a href="#projetos">Projetos</a>
+          <a href="#experiencia">Experiência</a>
           <a href="#sobre">Sobre</a>
           <a href="#habilidades">Habilidades</a>
-          <a href="#experiencia">Experiência</a>
-          <a href="#projetos">Projetos</a>
+          <a href="#formacao">Formação</a>
+          <a href="#estudos">Estudos</a>
           <a href="#contato">Contato</a>
         </nav>
         <p class="site-footer__copy">
