@@ -1128,11 +1128,6 @@ main {
   margin-top: 0.25rem;
 }
 
-/* destaque do livro atual */
-.book-card--highlight {
-  border-color: var(--text);
-}
-
 /* versão secundária (mais discreta) */
 .book-card--secondary {
   opacity: 0.9;
