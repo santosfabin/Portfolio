@@ -754,6 +754,12 @@ main {
 	gap: 0.75rem;
 }
 
+.contact-block-inline {
+	display: flex;
+	gap: 0.75rem;
+
+}
+
 .contact-block {
 	display: flex;
 	gap: 0.85rem;
@@ -762,6 +768,7 @@ main {
 	background: var(--bg-muted);
 	border: 1px solid var(--border);
 	border-radius: var(--radius);
+	width: 100%;
 }
 
 .contact-block > i {
