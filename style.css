@@ -769,7 +769,7 @@ main {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
-	justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .contact-block {
@@ -781,7 +781,7 @@ main {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   width: 47%;
-	min-width: 340px;
+  min-width: 340px;
 }
 
 .contact-block > i {
@@ -1046,9 +1046,10 @@ main {
     padding-top: calc(var(--nav-h) + 2rem);
   }
 }
+/* ——— Books section (coerente com seu portfólio atual) ——— */
 
 .books-block {
-  margin-top: 2rem;
+  margin-top: 2.25rem;
 }
 
 .books-block__title {
@@ -1060,13 +1061,14 @@ main {
   margin-bottom: 1rem;
 }
 
+/* grid igual padrão do site */
 .books-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-/* card padrão igual seus project-card / skill-panel */
+/* card base */
 .book-card {
   display: flex;
   flex-direction: column;
@@ -1087,7 +1089,7 @@ main {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
-/* capa do livro */
+/* capa */
 .book-card__cover {
   aspect-ratio: 3 / 4;
   background: var(--bg-muted);
@@ -1101,7 +1103,7 @@ main {
   display: block;
 }
 
-/* info igual padrão seu */
+/* conteúdo */
 .book-card__content {
   padding: 0.9rem;
   display: flex;
@@ -1119,12 +1121,24 @@ main {
   color: var(--text-secondary);
 }
 
+/* nota pequena (inglês) */
+.book-note {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
 /* destaque do livro atual */
 .book-card--highlight {
   border-color: var(--text);
 }
 
-/* responsivo consistente com seu site */
+/* versão secundária (mais discreta) */
+.book-card--secondary {
+  opacity: 0.9;
+}
+
+/* responsivo */
 @media (max-width: 900px) {
   .books-grid {
     grid-template-columns: repeat(2, 1fr);
