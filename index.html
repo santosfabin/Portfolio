@@ -39,8 +39,8 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="site-nav__links" id="nav-menu">
-          <li><a href="#projetos">Projetos</a></li>
           <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#projetos">Projetos</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#formacao">Formação</a></li>
@@ -72,21 +72,121 @@
       <!-- Hero -->
       <header class="hero">
         <h1 class="hero__title">
-          Experiências digitais com precisão e propósito.
+          Desenvolvedor Full-Stack focado em React e TypeScript
         </h1>
         <p class="hero__lead">
-          Desenvolvedor Full-Stack com foco em React, TypeScript e APIs REST —
-          São Paulo (SP). Construo e evoluo produtos que resolvem problemas
-          reais.
+          São Paulo (SP). Construo e evoluo produtos web de ponta a ponta —
+          interfaces responsivas, APIs REST e integrações estáveis. Comecei em
+          dev no técnico, aprofundei segurança na FATEC e hoje atuo em produto
+          full-stack no mercado.
         </p>
         <div class="hero__cta">
-          <a href="#projetos" class="btn btn--primary"
-            >Ver projetos
+          <a href="#experiencia" class="btn btn--primary"
+            >Ver experiência
             <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
           ></a>
           <a href="#contato" class="btn btn--ghost">Fale comigo</a>
         </div>
       </header>
+
+      <!-- Experiência -->
+      <section
+        class="section section--experience"
+        id="experiencia"
+        aria-labelledby="exp-titulo"
+      >
+        <h2 id="exp-titulo" class="section__title section__title--center">
+          Experiência profissional
+        </h2>
+        <div class="timeline">
+          <div class="timeline__line" aria-hidden="true"></div>
+
+          <article class="timeline-item timeline-item--right">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="exp-card">
+              <div class="exp-card__head">
+                <h3 class="exp-card__title">Desenvolvedor Full-Stack</h3>
+                <span class="exp-card__date">Out 2025 — Atual</span>
+              </div>
+              <p class="exp-card__company">Plumaa</p>
+              <p class="exp-card__desc">
+                Atuação no front-end em React/TypeScript, com interface
+                responsiva em Tailwind e gerenciamento de estado. Desenvolvimento
+                de rotas com controle de acesso por perfil e back-end com
+                NestJS. Integração de pagamentos com Stripe no fluxo do
+                produto. Apoio na automação de fluxos com Playwright.
+              </p>
+              <div class="exp-card__tags">
+                <span>React</span><span>TypeScript</span><span>Tailwind</span
+                ><span>NestJS</span><span>Stripe</span><span>Playwright</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-item--left">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="exp-card">
+              <div class="exp-card__head">
+                <h3 class="exp-card__title">
+                  Full-Stack Freelance (Part-time)
+                </h3>
+                <span class="exp-card__date">Ago — Set 2025</span>
+              </div>
+              <p class="exp-card__company">OnMind</p>
+              <p class="exp-card__desc">
+                Atuação no front-end em React, realizando correções e melhorias
+                em funcionalidades existentes. Desenvolvimento e integração de
+                APIs no back-end para complementar funcionalidades e garantir a
+                comunicação entre as camadas da aplicação.
+              </p>
+              <div class="exp-card__tags">
+                <span>React</span><span>TypeScript</span><span>APIs REST</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-item--right">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="exp-card">
+              <div class="exp-card__head">
+                <h3 class="exp-card__title">Desenvolvedor Front-End</h3>
+                <span class="exp-card__date">Jul — Set 2025</span>
+              </div>
+              <p class="exp-card__company">Plati Ai</p>
+              <p class="exp-card__desc">
+                Correção de bugs em produção e manutenção da interface em React
+                durante o ciclo de desenvolvimento. Participação na migração
+                para uma nova API, ajustando integrações e garantindo a
+                estabilidade da aplicação.
+              </p>
+              <div class="exp-card__tags">
+                <span>React</span><span>TypeScript</span><span>APIs REST</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-item--left">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="exp-card">
+              <div class="exp-card__head">
+                <h3 class="exp-card__title">Desenvolvedor Back-End</h3>
+                <span class="exp-card__date">Mai — Jul 2025</span>
+              </div>
+              <p class="exp-card__company">
+                Alpha Digital — Instituto Alpha Lumen (Alpha EdTech)
+              </p>
+              <p class="exp-card__desc">
+                Implementação de melhorias na API Laravel, com foco em paginação
+                e estruturação de dados nos endpoints, visando otimizar o
+                consumo pelo front-end.
+              </p>
+              <div class="exp-card__tags">
+                <span>PHP</span><span>Laravel</span><span>SQL</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
       <!-- Projetos -->
       <section
@@ -98,8 +198,8 @@
           Projetos em destaque
         </h2>
         <p class="section__subtitle">
-          Três projetos em destaque; o botão no final expande ou recolhe os
-          demais na mesma página.
+          Aplicações full-stack que representam melhor minha stack e forma de
+          trabalhar hoje.
         </p>
         <div class="projects-grid projects-grid--featured">
           <article class="project-card">
@@ -187,7 +287,14 @@
         </div>
 
         <div id="panel-more-projects" class="projects-more" hidden>
-          <div class="projects-grid projects-grid--more">
+          <p class="projects-more__intro">
+            Outros repositórios no GitHub — aplicações anteriores, experimentos
+            de interface e ferramentas pontuais.
+          </p>
+
+          <div class="projects-more__group">
+            <h3 class="projects-more__heading">Aplicações web</h3>
+            <div class="projects-grid projects-grid--more">
             <article class="project-card">
               <div class="project-card__media project-card__media--placeholder">
                 <i class="fa-solid fa-scissors" aria-hidden="true"></i>
@@ -200,9 +307,9 @@
                 EasyBarber — Plataforma para barbearias
               </h3>
               <p class="project-card__desc">
-                Projeto em grupo: barbearias criam página para divulgar serviços
-                e receber agendamentos online. SPA em JavaScript puro no front,
-                API Node.js + Express e PostgreSQL em servidor Linux remoto.
+                Desenvolvido em grupo: barbearias divulgam serviços e recebem
+                agendamentos online. SPA em JavaScript no front, API Node.js +
+                Express e PostgreSQL em servidor Linux.
               </p>
               <div class="project-card__actions">
                 <a
@@ -223,36 +330,13 @@
               </div>
               <h3 class="project-card__title">Randomix — Sorteios</h3>
               <p class="project-card__desc">
-                Plataforma simples para sorteios e promoções com fluxo claro e
-                resultado transparente. Front-end em JavaScript e CSS, ideal
-                para eventos que precisam de um sorteio justo.
+                Sorteios e promoções com fluxo direto e resultado transparente.
+                Front-end em JavaScript e CSS para eventos que precisam de um
+                processo simples e confiável.
               </p>
               <div class="project-card__actions">
                 <a
                   href="https://github.com/santosfabin/Randomix"
-                  class="btn btn--outline btn--sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i> Código</a
-                >
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-card__media project-card__media--placeholder">
-                <i class="fa-brands fa-python" aria-hidden="true"></i>
-              </div>
-              <div class="project-card__tags">
-                <span>PYTHON</span><span>NMAP</span>
-              </div>
-              <h3 class="project-card__title">Scanpy — Varredura de rede</h3>
-              <p class="project-card__desc">
-                Ferramenta em Python que usa Nmap para varredura de rede e
-                descoberta de serviços, pensada para ser simples de operar com
-                funcionalidades básicas de reconhecimento.
-              </p>
-              <div class="project-card__actions">
-                <a
-                  href="https://github.com/santosfabin/Scanpy"
                   class="btn btn--outline btn--sm"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -269,8 +353,8 @@
                 BeeSocy — Hub de redes sociais
               </h3>
               <p class="project-card__desc">
-                Plataforma para centralizar perfis e links em uma única página,
-                facilitando compartilhamento do seu “hub” digital pessoal.
+                Página única para reunir links e perfis sociais — experimento
+                de interface em React para centralizar presença digital.
               </p>
               <div class="project-card__actions">
                 <a
@@ -282,56 +366,17 @@
                 >
               </div>
             </article>
-            <article class="project-card">
-              <div class="project-card__media project-card__media--placeholder">
-                <i class="fa-brands fa-windows" aria-hidden="true"></i>
-              </div>
-              <div class="project-card__tags"><span>REACT</span></div>
-              <h3 class="project-card__title">
-                WGM — Windows Guardian Monitor
-              </h3>
-              <p class="project-card__desc">
-                Portal em React para download e gestão de ferramenta de
-                monitoramento voltada à segurança em ambientes Windows.
-              </p>
-              <div class="project-card__actions">
-                <a
-                  href="https://github.com/Windows-Guardian-Monitor/WGM-P"
-                  class="btn btn--outline btn--sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i> Código</a
-                >
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-card__media project-card__media--placeholder">
-                <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
-              </div>
-              <div class="project-card__tags">
-                <span>DOCUMENTAÇÃO</span><span>GIT</span>
-              </div>
-              <h3 class="project-card__title">Manual-Git</h3>
-              <p class="project-card__desc">
-                Documentação em profundidade sobre Git: comandos do dia a dia,
-                fluxos de trabalho e tópicos intermediários para a comunidade de
-                desenvolvedores.
-              </p>
-              <div class="project-card__actions">
-                <a
-                  href="https://github.com/santosfabin/Manual-Git"
-                  class="btn btn--outline btn--sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i> Código</a
-                >
-              </div>
-            </article>
+            </div>
+          </div>
+
+          <div class="projects-more__group">
+            <h3 class="projects-more__heading">Interfaces e ferramentas</h3>
+            <div class="projects-grid projects-grid--more">
             <article class="project-card">
               <div class="project-card__media project-card__media--placeholder">
                 <img
                   src="assets/Steam/Home.png"
-                  alt="Interface do Garimpo"
+                  alt="Interface do clone da biblioteca Steam"
                   loading="lazy"
                 />
               </div>
@@ -340,8 +385,8 @@
               </div>
               <h3 class="project-card__title">Clone da biblioteca Steam</h3>
               <p class="project-card__desc">
-                Recriação fiel da biblioteca desktop da Steam em HTML e CSS,
-                priorizando fidelidade visual e experiência em telas grandes.
+                Recriação da biblioteca desktop da Steam em HTML e CSS, com foco
+                em fidelidade visual e layout para telas grandes.
               </p>
               <div class="project-card__actions">
                 <a
@@ -360,6 +405,74 @@
                 ></a>
               </div>
             </article>
+            <article class="project-card">
+              <div class="project-card__media project-card__media--placeholder">
+                <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+              </div>
+              <div class="project-card__tags">
+                <span>DOCUMENTAÇÃO</span><span>GIT</span>
+              </div>
+              <h3 class="project-card__title">Manual-Git</h3>
+              <p class="project-card__desc">
+                Referência sobre Git para a comunidade: comandos do dia a dia,
+                fluxos de trabalho e tópicos intermediários.
+              </p>
+              <div class="project-card__actions">
+                <a
+                  href="https://github.com/santosfabin/Manual-Git"
+                  class="btn btn--outline btn--sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i> Código</a
+                >
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-card__media project-card__media--placeholder">
+                <i class="fa-brands fa-python" aria-hidden="true"></i>
+              </div>
+              <div class="project-card__tags">
+                <span>PYTHON</span><span>NMAP</span>
+              </div>
+              <h3 class="project-card__title">Scanpy — Varredura de rede</h3>
+              <p class="project-card__desc">
+                Script em Python com Nmap para mapear hosts e serviços em rede
+                local — ferramenta pontual de diagnóstico.
+              </p>
+              <div class="project-card__actions">
+                <a
+                  href="https://github.com/santosfabin/Scanpy"
+                  class="btn btn--outline btn--sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i> Código</a
+                >
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-card__media project-card__media--placeholder">
+                <i class="fa-brands fa-windows" aria-hidden="true"></i>
+              </div>
+              <div class="project-card__tags"><span>REACT</span></div>
+              <h3 class="project-card__title">
+                WGM — Windows Guardian Monitor
+              </h3>
+              <p class="project-card__desc">
+                Landing em React para distribuição de ferramenta de
+                monitoramento Windows — foco em interface e distribuição do
+                produto.
+              </p>
+              <div class="project-card__actions">
+                <a
+                  href="https://github.com/Windows-Guardian-Monitor/WGM-P"
+                  class="btn btn--outline btn--sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i> Código</a
+                >
+              </div>
+            </article>
+            </div>
           </div>
         </div>
 
@@ -377,106 +490,6 @@
               aria-hidden="true"
             ></i>
           </button>
-        </div>
-      </section>
-
-      <!-- Experiência -->
-      <section
-        class="section section--experience"
-        id="experiencia"
-        aria-labelledby="exp-titulo"
-      >
-        <h2 id="exp-titulo" class="section__title section__title--center">
-          Experiência profissional
-        </h2>
-        <div class="timeline">
-          <div class="timeline__line" aria-hidden="true"></div>
-
-          <article class="timeline-item timeline-item--right">
-            <div class="timeline-node" aria-hidden="true"></div>
-            <div class="exp-card">
-              <div class="exp-card__head">
-                <h3 class="exp-card__title">Desenvolvedor Full-Stack</h3>
-                <span class="exp-card__date">Out 2025 — Atual</span>
-              </div>
-              <p class="exp-card__company">Plumaa</p>
-              <p class="exp-card__desc">
-                Atuação no front-end em React/TypeScript, com implementação de
-                interface responsiva usando Tailwind e gerenciamento de estado
-                com Redux. Desenvolvimento de rotas com controle de acesso por
-                perfil e atuação no back-end com NestJS, contribuindo na criação
-                e manutenção de endpoints. Apoio na automação de fluxos com
-                Playwright.
-              </p>
-              <div class="exp-card__tags">
-                <span>React</span><span>TypeScript</span><span>Tailwind</span
-                ><span>Redux</span><span>NestJS</span><span>Playwright</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item timeline-item--left">
-            <div class="timeline-node" aria-hidden="true"></div>
-            <div class="exp-card">
-              <div class="exp-card__head">
-                <h3 class="exp-card__title">
-                  Full-Stack Freelance (Part-time)
-                </h3>
-                <span class="exp-card__date">Ago — Set 2025</span>
-              </div>
-              <p class="exp-card__company">OnMind</p>
-              <p class="exp-card__desc">
-                Atuação no front-end em React, realizando correções e melhorias
-                em funcionalidades existentes. Desenvolvimento e integração de
-                APIs no back-end para complementar funcionalidades e garantir a
-                comunicação entre as camadas da aplicação.
-              </p>
-              <div class="exp-card__tags">
-                <span>React</span><span>TypeScript</span><span>APIs REST</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item timeline-item--right">
-            <div class="timeline-node" aria-hidden="true"></div>
-            <div class="exp-card">
-              <div class="exp-card__head">
-                <h3 class="exp-card__title">Desenvolvedor Front-End</h3>
-                <span class="exp-card__date">Jul — Set 2025</span>
-              </div>
-              <p class="exp-card__company">Plati Ai</p>
-              <p class="exp-card__desc">
-                Correção de bugs em produção e manutenção da interface em React
-                durante o ciclo de desenvolvimento. Participação na migração
-                para uma nova API, ajustando integrações e garantindo a
-                estabilidade da aplicação.
-              </p>
-              <div class="exp-card__tags">
-                <span>React</span><span>TypeScript</span><span>APIs REST</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item timeline-item--left">
-            <div class="timeline-node" aria-hidden="true"></div>
-            <div class="exp-card">
-              <div class="exp-card__head">
-                <h3 class="exp-card__title">Desenvolvedor Back-End</h3>
-                <span class="exp-card__date">Mai — Jul 2025</span>
-              </div>
-              <p class="exp-card__company">
-                Alpha Digital — Instituto Alpha Lumen (Alpha EdTech)
-              </p>
-              <p class="exp-card__desc">
-                Implementação de melhorias na API Laravel, com foco em paginação
-                e estruturação de dados nos endpoints, visando otimizar o
-                consumo pelo front-end.
-              </p>
-              <div class="exp-card__tags">
-                <span>PHP</span><span>Laravel</span><span>SQL</span>
-              </div>
-            </div>
-          </article>
         </div>
       </section>
 
@@ -498,10 +511,12 @@
           <div class="about-intro__text">
             <h2 id="sobre-titulo" class="section__title">Sobre</h2>
             <p class="section__lead">
-              Olá, sou <strong>Fabiano Vieira dos Santos</strong>. Trabalho há
-              anos no ecossistema JavaScript, do front ao back: interfaces
-              responsivas, integrações e APIs estáveis. Valorizo código claro,
-              testes quando fazem sentido e entrega contínua junto ao time.
+              Olá, sou <strong>Fabiano Vieira dos Santos</strong>. Trabalho no
+              ecossistema JavaScript de ponta a ponta — interfaces responsivas,
+              integrações e APIs estáveis. Comecei em dev no técnico,
+              aprofundei segurança na FATEC e hoje atuo em produto web
+              full-stack. Valorizo código claro, testes e entrega contínua
+              junto ao time.
             </p>
           </div>
         </div>
@@ -532,8 +547,8 @@
             </div>
             <h3 class="feature-card__title">Integrações</h3>
             <p class="feature-card__text">
-              APIs REST, pagamentos (Stripe, AbacatePay) e comunicação sólida
-              entre camadas.
+              APIs REST, pagamentos (Stripe no dia a dia; integração com
+              AbacatePay) e comunicação sólida entre camadas.
             </p>
           </article>
         </div>
@@ -566,7 +581,7 @@
                 <span>TypeScript</span>
                 <span>JavaScript</span>
                 <span>Tailwind CSS</span>
-                <span>Redux</span>
+                <span>Gerenciamento de estado</span>
                 <span>Context API</span>
                 <span>HTML</span>
                 <span>CSS</span>
@@ -605,15 +620,12 @@
                 <span>Testes automatizados</span>
                 <span>Redis</span>
                 <span>Python</span>
-                <span>Redes</span>
               </div>
             </div>
 
             <div class="skill-panel">
               <h3 class="skill-panel__label">Em estudo</h3>
               <div class="skill-pills">
-                <span>Inglês (A2/B1 — leitura técnica)</span>
-                <span>Python</span>
                 <span>LLMs e IA aplicada</span>
               </div>
             </div>
@@ -634,14 +646,25 @@
           <div class="education-card">
             <h3>Técnico em Desenvolvimento de Sistemas</h3>
             <p>ETEC · Ago 2021 — Dez 2022</p>
+            <p class="education-card__note">
+              Primeira base em lógica, web e desenvolvimento de software.
+            </p>
           </div>
           <div class="education-card">
             <h3>Segurança da Informação</h3>
             <p>FATEC · Jan 2022 — Dez 2024</p>
+            <p class="education-card__note">
+              Aprofundamento em redes e segurança — reforça auth, infra e
+              boas práticas no código.
+            </p>
           </div>
           <div class="education-card">
             <h3>Programação</h3>
             <p>Alpha EdTech · Out 2024 — Out 2025</p>
+            <p class="education-card__note">
+              Formação intensiva em desenvolvimento web full-stack; estágio
+              back-end na mesma instituição (Alpha Digital).
+            </p>
           </div>
         </div>
       </section>
@@ -657,8 +680,8 @@
         </h2>
 
         <p class="section__subtitle">
-          Materiais que utilizo para evoluir em arquitetura de software, system
-          design e comunicação técnica no dia a dia.
+          Materiais que uso para evoluir em arquitetura, system design,
+          comunicação técnica e tomada de decisão.
         </p>
 
         <!-- Lendo agora -->
