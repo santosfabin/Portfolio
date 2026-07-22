@@ -1,9 +1,24 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fabiano Vieira dos Santos — Portfólio</title>
+    <meta
+      name="description"
+      content="Desenvolvedor Full-Stack (React, TypeScript, Node) em São Paulo. Produtos web com IA aplicada e mentalidade de segurança desde o código."
+    />
+    <meta property="og:title" content="Fabiano Vieira dos Santos — Portfólio" />
+    <meta
+      property="og:description"
+      content="Full-Stack com React e TypeScript. Experiência em produto, IA (LangChain/SSE) e desenvolvimento seguro."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://santosfabin.github.io/Portfolio/"
+    />
+    <meta property="og:image" content="https://github.com/santosfabin.png" />
     <link
       rel="icon"
       href="https://cdn-icons-png.flaticon.com/512/25/25231.png"
@@ -12,7 +27,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -39,10 +54,10 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="site-nav__links" id="nav-menu">
+          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#experiencia">Experiência</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#seguranca">Segurança</a></li>
-          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#formacao">Formação</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -71,14 +86,16 @@
     <main id="conteudo-principal">
       <!-- Hero -->
       <header class="hero">
+        <p class="hero__eyebrow">São Paulo (SP) · Aberto a novas oportunidades</p>
         <h1 class="hero__title">
-          Desenvolvedor Full-Stack focado em React e TypeScript
+          Full-Stack que une produto, IA e código seguro
         </h1>
         <p class="hero__lead">
-          São Paulo (SP). Construo e evoluo produtos web de ponta a ponta —
-          interfaces responsivas, APIs REST e integrações estáveis. Comecei em
-          dev no técnico, aprofundei segurança na FATEC e hoje atuo em produto
-          full-stack no mercado com foco em IA e desenvolvimento seguro.
+          Construo aplicações web de ponta a ponta com React, TypeScript e
+          Node.js — interfaces claras, APIs estáveis e integrações de
+          pagamento. Formação em Segurança da Informação (FATEC): uso o que
+          aprendi em labs e OWASP para blindar auth, APIs e fluxos com IA desde
+          o código-fonte.
         </p>
         <div class="hero__cta">
           <a href="#experiencia" class="btn btn--primary"
@@ -88,6 +105,67 @@
           <a href="#contato" class="btn btn--ghost">Fale comigo</a>
         </div>
       </header>
+
+      <!-- Sobre -->
+      <section
+        class="section section--about"
+        id="sobre"
+        aria-labelledby="sobre-titulo"
+      >
+        <div class="about-intro">
+          <img
+            id="profile-pic-img"
+            src=""
+            alt=""
+            class="about-intro__photo"
+            width="120"
+            height="120"
+          />
+          <div class="about-intro__text">
+            <h2 id="sobre-titulo" class="section__title">Sobre</h2>
+            <p class="section__lead">
+              Olá, sou <strong>Fabiano Vieira dos Santos</strong>. Desenvolvedor
+              full-stack no ecossistema JavaScript (React, TypeScript, Node),
+              com projetos de IA aplicada (agentes, streaming/SSE) e base sólida
+              em segurança pela FATEC — uso labs e OWASP para construir auth,
+              APIs e produtos mais resistentes. Aberto a novas oportunidades em
+              São Paulo (SP).
+            </p>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h3 class="feature-card__title">Produto full-stack</h3>
+            <p class="feature-card__text">
+              React, TypeScript, NestJS/Express, PostgreSQL e pagamentos —
+              entrega de ponta a ponta com foco em manutenção.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <h3 class="feature-card__title">IA aplicada</h3>
+            <p class="feature-card__text">
+              LangChain.js, tool calling e streaming (SSE) — como no Garimpo,
+              chat com agentes e respostas em tempo real.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="feature-card__title">Segurança no código</h3>
+            <p class="feature-card__text">
+              OWASP, auth/RBAC e labs controlados (DVWA, PortSwigger, THM) para
+              antecipar falhas antes de ir para produção.
+            </p>
+          </article>
+        </div>
+      </section>
 
       <!-- Experiência -->
       <section
@@ -110,15 +188,15 @@
               </div>
               <p class="exp-card__company">Plumaa</p>
               <p class="exp-card__desc">
-                Atuação no front-end em React/TypeScript, com interface
-                responsiva em Tailwind e gerenciamento de estado.
-                Desenvolvimento de rotas com controle de acesso por perfil e
-                back-end com NestJS. Integração de pagamentos com Stripe no
-                fluxo do produto. Apoio na automação de fluxos com Playwright.
+                Atuação full-stack em React/TypeScript (Tailwind, estado
+                global), rotas com controle de acesso por perfil (RBAC) e
+                back-end NestJS com Prisma. Integração de pagamentos (Stripe,
+                AbacatePay) e automação de fluxos com Playwright.
               </p>
               <div class="exp-card__tags">
                 <span>React</span><span>TypeScript</span><span>Tailwind</span
-                ><span>NestJS</span><span>Stripe</span><span>Playwright</span>
+                ><span>NestJS</span><span>Prisma</span><span>Stripe</span
+                ><span>Playwright</span>
               </div>
             </div>
           </article>
@@ -134,10 +212,9 @@
               </div>
               <p class="exp-card__company">OnMind</p>
               <p class="exp-card__desc">
-                Atuação no front-end em React, realizando correções e melhorias
-                em funcionalidades existentes. Desenvolvimento e integração de
-                APIs no back-end para complementar funcionalidades e garantir a
-                comunicação entre as camadas da aplicação.
+                Freela part-time em paralelo à Plati Ai: melhorias de interface
+                em React/TypeScript e integração estável de APIs REST no
+                back-end, complementando funcionalidades entre as camadas.
               </p>
               <div class="exp-card__tags">
                 <span>React</span><span>TypeScript</span><span>APIs REST</span>
@@ -154,10 +231,10 @@
               </div>
               <p class="exp-card__company">Plati Ai</p>
               <p class="exp-card__desc">
-                Correção de bugs em produção e manutenção da interface em React
-                durante o ciclo de desenvolvimento. Participação na migração
-                para uma nova API, ajustando integrações e garantindo a
-                estabilidade da aplicação.
+                Correção de bugs críticos em produção e manutenção da interface
+                React. Participação na migração gradual de APIs, ajustando
+                integrações e mantendo a estabilidade do produto (período em que
+                também atuei como freela part-time na OnMind).
               </p>
               <div class="exp-card__tags">
                 <span>React</span><span>TypeScript</span><span>APIs REST</span>
@@ -198,8 +275,8 @@
           Projetos em destaque
         </h2>
         <p class="section__subtitle">
-          Projetos autorais que refletem minha atuação técnica nas frentes de
-          Desenvolvimento Web, Inteligência Artificial e Engenharia.
+          Projetos autorais com foco em produto full-stack, IA aplicada e
+          engenharia de software.
         </p>
         <div class="projects-grid projects-grid--featured">
           <!-- Projeto 1: Garimpo (IA) -->
@@ -207,7 +284,7 @@
             <div class="project-card__media">
               <img
                 src="assets/Garimpo/garimpo-01-welcome.png"
-                alt="Interface do Garimpo"
+                alt="Interface do Garimpo — assistente de cinema com IA"
                 loading="lazy"
               />
             </div>
@@ -219,10 +296,9 @@
               Garimpo — Assistente de cinema com IA
             </h3>
             <p class="project-card__desc">
-              Aplicação full-stack que conversa com uma IA (GPT-4o/Ollama local)
-              para recomendar filmes de forma contextual. Respostas em tempo
-              real com Server-Sent Events (SSE), processamento de fluxos
-              dinâmicos com LangChain.js e Tool Calling no back-end.
+              Chat full-stack com IA (GPT-4o / Ollama local) para recomendar
+              filmes com contexto. Streaming em tempo real via SSE, agentes com
+              Tool Calling (LangChain.js) e persistência em PostgreSQL.
             </p>
             <div class="project-card__actions">
               <a
@@ -235,10 +311,15 @@
             </div>
           </article>
 
-          <!-- Projeto 2: AssetCore (Engenharia de Software) -->
+          <!-- Projeto 2: AssetCore -->
           <article class="project-card">
-            <div class="project-card__media project-card__media--placeholder">
-              <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+            <div class="project-card__media">
+              <div class="project-card__media-mark" aria-hidden="true">
+                <span class="project-card__media-mark-label">AssetCore</span>
+                <span class="project-card__media-mark-sub"
+                  >Arquitetura em camadas · React · Express · PostgreSQL</span
+                >
+              </div>
             </div>
             <div class="project-card__tags">
               <span>REACT</span><span>TYPESCRIPT</span><span>EXPRESS</span
@@ -246,10 +327,9 @@
             </div>
             <h3 class="project-card__title">AssetCore — Gestão de ativos</h3>
             <p class="project-card__desc">
-              Sistema corporativo full-stack para organização e gestão de ativos
-              físicos e lógicos. Construído com arquitetura de software em
-              camadas no back-end (Node.js + Express), validação rígida de dados
-              e persistência em PostgreSQL conteinerizado.
+              Sistema full-stack para organização de ativos físicos e lógicos.
+              Back-end em camadas (Express), validação rígida de dados e
+              PostgreSQL conteinerizado — foco em organização e escalabilidade.
             </p>
             <div class="project-card__actions">
               <a
@@ -262,25 +342,29 @@
             </div>
           </article>
 
-          <!-- Projeto 3: Scanpy (Hacking & Cybersecurity) -->
+          <!-- Projeto 3: API Login -->
           <article class="project-card">
-            <div class="project-card__media project-card__media--placeholder">
-              <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+            <div class="project-card__media">
+              <div class="project-card__media-mark" aria-hidden="true">
+                <span class="project-card__media-mark-label">API Login</span>
+                <span class="project-card__media-mark-sub"
+                  >JWT · Docker Compose · PostgreSQL</span
+                >
+              </div>
             </div>
             <div class="project-card__tags">
-              <span>PYTHON</span><span>NMAP</span><span>SECURITY</span
-              ><span>RECON</span><span>LINUX</span>
+              <span>NODE.JS</span><span>EXPRESS</span><span>JWT</span
+              ><span>POSTGRESQL</span><span>DOCKER</span>
             </div>
-            <h3 class="project-card__title">Scanpy — Automação de Recon</h3>
+            <h3 class="project-card__title">API de login com Docker</h3>
             <p class="project-card__desc">
-              Script utilitário em Python integrado ao Nmap para automatizar a
-              varredura de redes locais, detecção rápida de hosts ativos,
-              descoberta de portas abertas e fingerprinting de sistemas
-              operacionais. Foco em inteligência e reconhecimento ágil.
+              API RESTful de autenticação com JWT, hashing de senhas e ambiente
+              portátil com Docker Compose — base prática de auth segura para
+              apps full-stack.
             </p>
             <div class="project-card__actions">
               <a
-                href="https://github.com/santosfabin/Scanpy"
+                href="https://github.com/santosfabin/API_Login_com_docker_compose"
                 class="btn btn--outline btn--sm"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -292,97 +376,10 @@
 
         <div id="panel-more-projects" class="projects-more" hidden>
           <div class="projects-more__group">
-            <h3 class="projects-more__heading">Aplicações web</h3>
+            <h3 class="projects-more__heading">Experimentos e estudos</h3>
             <div class="projects-grid projects-grid--more">
               <article class="project-card">
-                <div
-                  class="project-card__media project-card__media--placeholder"
-                >
-                  <i class="fa-solid fa-key" aria-hidden="true"></i>
-                </div>
-                <div class="project-card__tags">
-                  <span>NODE.JS</span><span>EXPRESS</span><span>JWT</span
-                  ><span>POSTGRESQL</span><span>DOCKER</span>
-                </div>
-                <h3 class="project-card__title">API de login com Docker</h3>
-                <p class="project-card__desc">
-                  API RESTful focada em autenticação com tokens JWT, tratamento
-                  de senhas criptografadas e ambiente portátil encapsulado com
-                  Docker Compose.
-                </p>
-                <div class="project-card__actions">
-                  <a
-                    href="https://github.com/santosfabin/API_Login_com_docker_compose"
-                    class="btn btn--outline btn--sm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><i class="fab fa-github"></i> Código</a
-                  >
-                </div>
-              </article>
-              <article class="project-card">
-                <div
-                  class="project-card__media project-card__media--placeholder"
-                >
-                  <i class="fa-solid fa-scissors" aria-hidden="true"></i>
-                </div>
-                <div class="project-card__tags">
-                  <span>JAVASCRIPT</span><span>NODE.JS</span><span>EXPRESS</span
-                  ><span>POSTGRESQL</span>
-                </div>
-                <h3 class="project-card__title">
-                  EasyBarber — Plataforma para barbearias
-                </h3>
-                <p class="project-card__desc">
-                  Desenvolvido em grupo: barbearias divulgam serviços e recebem
-                  agendamentos online. SPA em JavaScript no front, API Node.js +
-                  Express e PostgreSQL em servidor Linux.
-                </p>
-                <div class="project-card__actions">
-                  <a
-                    href="https://github.com/santosfabin/easyBarber"
-                    class="btn btn--outline btn--sm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><i class="fab fa-github"></i> Código</a
-                  >
-                </div>
-              </article>
-              <article class="project-card">
-                <div
-                  class="project-card__media project-card__media--placeholder"
-                >
-                  <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
-                </div>
-                <div class="project-card__tags">
-                  <span>JAVASCRIPT</span><span>CSS</span>
-                </div>
-                <h3 class="project-card__title">Randomix — Sorteios</h3>
-                <p class="project-card__desc">
-                  Sorteios e promoções com fluxo direto e resultado
-                  transparente. Front-end em JavaScript e CSS para eventos que
-                  precisam de um processo simples e confiável.
-                </p>
-                <div class="project-card__actions">
-                  <a
-                    href="https://github.com/santosfabin/Randomix"
-                    class="btn btn--outline btn--sm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><i class="fab fa-github"></i> Código</a
-                  >
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="projects-more__group">
-            <h3 class="projects-more__heading">Interfaces e ferramentas</h3>
-            <div class="projects-grid projects-grid--more">
-              <article class="project-card">
-                <div
-                  class="project-card__media project-card__media--placeholder"
-                >
+                <div class="project-card__media">
                   <img
                     src="assets/Steam/Home.png"
                     alt="Interface do clone da biblioteca Steam"
@@ -415,71 +412,84 @@
                 </div>
               </article>
               <article class="project-card">
-                <div
-                  class="project-card__media project-card__media--placeholder"
-                >
-                  <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+                <div class="project-card__media">
+                  <div class="project-card__media-mark" aria-hidden="true">
+                    <span class="project-card__media-mark-label">EasyBarber</span>
+                    <span class="project-card__media-mark-sub"
+                      >SPA · Node · PostgreSQL</span
+                    >
+                  </div>
+                </div>
+                <div class="project-card__tags">
+                  <span>JAVASCRIPT</span><span>NODE.JS</span><span>EXPRESS</span
+                  ><span>POSTGRESQL</span>
+                </div>
+                <h3 class="project-card__title">
+                  EasyBarber — Plataforma para barbearias
+                </h3>
+                <p class="project-card__desc">
+                  Projeto em grupo: barbearias divulgam serviços e recebem
+                  agendamentos online. SPA em JavaScript, API Node.js + Express
+                  e PostgreSQL.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/santosfabin/easyBarber"
+                    class="btn btn--outline btn--sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> Código</a
+                  >
+                </div>
+              </article>
+              <article class="project-card">
+                <div class="project-card__media">
+                  <div class="project-card__media-mark" aria-hidden="true">
+                    <span class="project-card__media-mark-label">Scanpy</span>
+                    <span class="project-card__media-mark-sub"
+                      >Python · Nmap · Recon</span
+                    >
+                  </div>
+                </div>
+                <div class="project-card__tags">
+                  <span>PYTHON</span><span>NMAP</span><span>LINUX</span>
+                </div>
+                <h3 class="project-card__title">Scanpy — Automação de Recon</h3>
+                <p class="project-card__desc">
+                  Script Python + Nmap para varredura de redes locais: hosts
+                  ativos, portas e fingerprint de SO — alinhado às práticas de
+                  segurança da formação.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/santosfabin/Scanpy"
+                    class="btn btn--outline btn--sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> Código</a
+                  >
+                </div>
+              </article>
+              <article class="project-card">
+                <div class="project-card__media">
+                  <div class="project-card__media-mark" aria-hidden="true">
+                    <span class="project-card__media-mark-label">Manual-Git</span>
+                    <span class="project-card__media-mark-sub"
+                      >Documentação · Git</span
+                    >
+                  </div>
                 </div>
                 <div class="project-card__tags">
                   <span>DOCUMENTAÇÃO</span><span>GIT</span>
                 </div>
                 <h3 class="project-card__title">Manual-Git</h3>
                 <p class="project-card__desc">
-                  Referência sobre Git para a comunidade: comandos do dia a dia,
-                  fluxos de trabalho e tópicos intermediários.
+                  Referência sobre Git: comandos do dia a dia, fluxos de
+                  trabalho e tópicos intermediários.
                 </p>
                 <div class="project-card__actions">
                   <a
                     href="https://github.com/santosfabin/Manual-Git"
-                    class="btn btn--outline btn--sm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><i class="fab fa-github"></i> Código</a
-                  >
-                </div>
-              </article>
-              <article class="project-card">
-                <div
-                  class="project-card__media project-card__media--placeholder"
-                >
-                  <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
-                </div>
-                <div class="project-card__tags"><span>REACT</span></div>
-                <h3 class="project-card__title">
-                  BeeSocy — Hub de redes sociais
-                </h3>
-                <p class="project-card__desc">
-                  Página única para reunir links e perfis sociais — experimento
-                  de interface em React para centralizar presença digital.
-                </p>
-                <div class="project-card__actions">
-                  <a
-                    href="https://github.com/BeeSocy/beesocy"
-                    class="btn btn--outline btn--sm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><i class="fab fa-github"></i> Código</a
-                  >
-                </div>
-              </article>
-              <article class="project-card">
-                <div
-                  class="project-card__media project-card__media--placeholder"
-                >
-                  <i class="fa-brands fa-windows" aria-hidden="true"></i>
-                </div>
-                <div class="project-card__tags"><span>REACT</span></div>
-                <h3 class="project-card__title">
-                  WGM — Windows Guardian Monitor
-                </h3>
-                <p class="project-card__desc">
-                  Landing em React para distribuição de ferramenta de
-                  monitoramento Windows — foco em interface e distribuição do
-                  produto.
-                </p>
-                <div class="project-card__actions">
-                  <a
-                    href="https://github.com/Windows-Guardian-Monitor/WGM-P"
                     class="btn btn--outline btn--sm"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -499,7 +509,7 @@
             aria-expanded="false"
             aria-controls="panel-more-projects"
           >
-            <span class="projects-toggle__label">Ver mais projetos</span>
+            <span class="projects-toggle__label">Ver experimentos</span>
             <i
               class="fa-solid fa-chevron-down projects-toggle__icon"
               aria-hidden="true"
@@ -518,8 +528,9 @@
           Segurança da Informação
         </h2>
         <p class="section__subtitle">
-          Práticas em laboratório e formação — aplicações web vulneráveis,
-          infraestrutura de redes e desafios em ambiente controlado.
+          Formação e labs em ambiente controlado — o objetivo é entender o
+          ataque para escrever aplicações e APIs mais seguras no dia a dia de
+          desenvolvimento.
         </p>
 
         <div class="sec-grid">
@@ -702,42 +713,6 @@
             /></span>
             <span class="thm-badge__name">cat linux.txt</span>
             <span class="thm-badge__meta">Common · 28.2%</span>
-          </li>
-          <li class="thm-badge">
-            <span class="thm-badge__icon"
-              ><img
-                src="assets/thm-badges/30-day-streak.png"
-                alt=""
-                width="92"
-                height="92"
-                loading="lazy"
-            /></span>
-            <span class="thm-badge__name">30 Day Streak</span>
-            <span class="thm-badge__meta">Common · 10.2%</span>
-          </li>
-          <li class="thm-badge">
-            <span class="thm-badge__icon"
-              ><img
-                src="assets/thm-badges/7-day-streak.png"
-                alt=""
-                width="92"
-                height="92"
-                loading="lazy"
-            /></span>
-            <span class="thm-badge__name">7 Day Streak</span>
-            <span class="thm-badge__meta">Common · 21.7%</span>
-          </li>
-          <li class="thm-badge">
-            <span class="thm-badge__icon"
-              ><img
-                src="assets/thm-badges/first-four.png"
-                alt=""
-                width="92"
-                height="92"
-                loading="lazy"
-            /></span>
-            <span class="thm-badge__name">First Four</span>
-            <span class="thm-badge__meta">Common · 27.4%</span>
           </li>
         </ul>
 
@@ -987,66 +962,6 @@
         </div>
       </section>
 
-      <!-- Sobre -->
-      <section
-        class="section section--about"
-        id="sobre"
-        aria-labelledby="sobre-titulo"
-      >
-        <div class="about-intro">
-          <img
-            id="profile-pic-img"
-            src=""
-            alt=""
-            class="about-intro__photo"
-            width="120"
-            height="120"
-          />
-          <div class="about-intro__text">
-            <h2 id="sobre-titulo" class="section__title">Sobre</h2>
-            <p class="section__lead">
-              Olá, sou <strong>Fabiano Vieira dos Santos</strong>. Trabalho no
-              ecossistema JavaScript de ponta a ponta — interfaces responsivas,
-              integrações e APIs estáveis. Comecei em dev no técnico, aprofundei
-              segurança na FATEC e hoje atuo em produto web full-stack. Valorizo
-              código claro, testes e entrega contínua junto ao time.
-            </p>
-          </div>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <h3 class="feature-card__title">Código limpo</h3>
-            <p class="feature-card__text">
-              Estrutura legível, TypeScript e padrões que facilitam manutenção e
-              evolução do produto.
-            </p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">
-              <i class="fa-solid fa-layer-group"></i>
-            </div>
-            <h3 class="feature-card__title">Stack moderna</h3>
-            <p class="feature-card__text">
-              React, Node.js, NestJS e ferramentas atuais para web rápida e
-              confiável.
-            </p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">
-              <i class="fa-solid fa-link"></i>
-            </div>
-            <h3 class="feature-card__title">Integrações</h3>
-            <p class="feature-card__text">
-              APIs REST, pagamentos (Stripe no dia a dia; integração com
-              AbacatePay) e comunicação sólida entre camadas.
-            </p>
-          </article>
-        </div>
-      </section>
-
       <!-- Habilidades -->
       <section
         class="section section--skills"
@@ -1059,9 +974,9 @@
               Habilidades técnicas
             </h2>
             <p class="section__lead">
-              Experiência no desenvolvimento de aplicações full-stack, atuando
-              em interfaces modernas, APIs REST e integrações seguras entre
-              front-end e back-end.
+              Stack de produto full-stack, IA aplicada e o essencial de
+              segurança/infra que uso no dia a dia — sem lista infinita de
+              tools.
             </p>
           </div>
 
@@ -1073,11 +988,8 @@
                 <span>TypeScript</span>
                 <span>JavaScript</span>
                 <span>Tailwind CSS</span>
-                <span>Gerenciamento de estado</span>
                 <span>Context API</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Responsividade</span>
+                <span>HTML / CSS</span>
               </div>
             </div>
 
@@ -1085,12 +997,12 @@
               <h3 class="skill-panel__label">Backend</h3>
               <div class="skill-pills">
                 <span>Node.js</span>
-                <span>Express</span>
                 <span>NestJS</span>
-                <span>APIs REST</span>
-                <span>Laravel</span>
+                <span>Express</span>
+                <span>Prisma</span>
                 <span>PostgreSQL</span>
-                <span>JWT</span>
+                <span>JWT / RBAC</span>
+                <span>Laravel</span>
               </div>
             </div>
 
@@ -1099,7 +1011,7 @@
               <div class="skill-pills">
                 <span>LangChain.js</span>
                 <span>OpenAI API</span>
-                <span>Ollama (IA Local)</span>
+                <span>Ollama</span>
                 <span>Agentes de IA</span>
                 <span>Tool Calling</span>
                 <span>Streaming (SSE)</span>
@@ -1111,44 +1023,32 @@
               <div class="skill-pills">
                 <span>OWASP Top 10</span>
                 <span>PortSwigger Academy</span>
-                <span>DVWA</span>
                 <span>Burp Suite</span>
                 <span>Wireshark</span>
                 <span>Nmap</span>
-                <span>Shodan</span>
-                <span>Metasploit</span>
-                <span>Hydra</span>
-                <span>John the Ripper</span>
-                <span>Gobuster</span>
-                <span>Netcat</span>
-                <span>Ngrok</span>
-                <span>Maltego</span>
-                <span>Whois</span>
-                <span>Tor / Proxychains</span>
-                <span>Criptografia & Hashes</span>
+                <span>DVWA</span>
+                <span>Criptografia &amp; Hashes</span>
               </div>
             </div>
 
             <div class="skill-panel">
-              <h3 class="skill-panel__label">Infraestrutura & Ferramentas</h3>
+              <h3 class="skill-panel__label">Infraestrutura &amp; QA</h3>
               <div class="skill-pills">
                 <span>Git</span>
                 <span>Docker</span>
                 <span>Linux</span>
                 <span>Playwright</span>
                 <span>Stripe</span>
-                <span>AbacatePay</span>
+                <span>Redis</span>
               </div>
             </div>
 
             <div class="skill-panel">
-              <h3 class="skill-panel__label">Conhecimentos complementares</h3>
+              <h3 class="skill-panel__label">Complementares</h3>
               <div class="skill-pills">
-                <span>Testes automatizados</span>
-                <span>Redis</span>
                 <span>Python</span>
                 <span>Sockets (TCP/UDP)</span>
-                <span>Cisco Routing</span>
+                <span>Cisco / DHCP</span>
               </div>
             </div>
           </div>
@@ -1176,8 +1076,8 @@
             <h3>Segurança da Informação</h3>
             <p>FATEC · Jan 2022 — Dez 2024</p>
             <p class="education-card__note">
-              Aprofundamento em redes e segurança — reforça auth, infra e boas
-              práticas no código.
+              Redes, criptografia e labs ofensivos controlados — base para
+              auth, APIs e desenvolvimento seguro.
             </p>
           </div>
           <div class="education-card">
@@ -1269,11 +1169,11 @@
           ><span class="site-logo__prompt">&gt;_</span> santosfabin</a
         >
         <nav class="site-footer__nav" aria-label="Rodapé">
-          <a href="#projetos">Projetos</a>
-          <a href="#experiencia">Experiência</a>
           <a href="#sobre">Sobre</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#seguranca">Segurança</a>
           <a href="#habilidades">Habilidades</a>
-          <a href="#formacao">Formação</a>
           <a href="#contato">Contato</a>
         </nav>
         <p class="site-footer__copy">

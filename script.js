@@ -36,31 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		const setListOpen = open => {
 			listPanel.hidden = !open;
 			listToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-			listLabel.textContent = open ? 'Ver menos projetos' : 'Ver mais projetos';
+			listLabel.textContent = open
+				? 'Ver menos experimentos'
+				: 'Ver experimentos';
 			listIcon.classList.toggle('fa-chevron-down', !open);
 			listIcon.classList.toggle('fa-chevron-up', open);
 		};
 		listToggle.addEventListener('click', () => {
 			setListOpen(listPanel.hidden);
-		});
-	}
-
-	const form = document.getElementById('contact-form');
-	if (form) {
-		form.addEventListener('submit', e => {
-			e.preventDefault();
-			const fd = new FormData(form);
-			const name = String(fd.get('name') || '').trim();
-			const email = String(fd.get('email') || '').trim();
-			const subject = String(fd.get('subject') || '').trim();
-			const message = String(fd.get('message') || '').trim();
-			if (!name || !email || !subject || !message) return;
-
-			const body = encodeURIComponent(
-				`Nome: ${name}\nE-mail: ${email}\n\n${message}`
-			);
-			const sub = encodeURIComponent(subject);
-			window.location.href = `mailto:fsfabianosantos03@gmail.com?subject=${sub}&body=${body}`;
 		});
 	}
 });
