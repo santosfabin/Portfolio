@@ -41,10 +41,10 @@
         <ul class="site-nav__links" id="nav-menu">
           <li><a href="#experiencia">Experiência</a></li>
           <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#seguranca">Segurança</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#formacao">Formação</a></li>
-          <li><a href="#estudos">Estudos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
         <div class="site-nav__actions">
@@ -78,7 +78,7 @@
           São Paulo (SP). Construo e evoluo produtos web de ponta a ponta —
           interfaces responsivas, APIs REST e integrações estáveis. Comecei em
           dev no técnico, aprofundei segurança na FATEC e hoje atuo em produto
-          full-stack no mercado.
+          full-stack no mercado com foco em IA e desenvolvimento seguro.
         </p>
         <div class="hero__cta">
           <a href="#experiencia" class="btn btn--primary"
@@ -111,10 +111,10 @@
               <p class="exp-card__company">Plumaa</p>
               <p class="exp-card__desc">
                 Atuação no front-end em React/TypeScript, com interface
-                responsiva em Tailwind e gerenciamento de estado. Desenvolvimento
-                de rotas com controle de acesso por perfil e back-end com
-                NestJS. Integração de pagamentos com Stripe no fluxo do
-                produto. Apoio na automação de fluxos com Playwright.
+                responsiva em Tailwind e gerenciamento de estado.
+                Desenvolvimento de rotas com controle de acesso por perfil e
+                back-end com NestJS. Integração de pagamentos com Stripe no
+                fluxo do produto. Apoio na automação de fluxos com Playwright.
               </p>
               <div class="exp-card__tags">
                 <span>React</span><span>TypeScript</span><span>Tailwind</span
@@ -198,10 +198,11 @@
           Projetos em destaque
         </h2>
         <p class="section__subtitle">
-          Aplicações full-stack que representam melhor minha stack e forma de
-          trabalhar hoje.
+          Projetos autorais que refletem minha atuação técnica nas frentes de
+          Desenvolvimento Web, Inteligência Artificial e Engenharia.
         </p>
         <div class="projects-grid projects-grid--featured">
+          <!-- Projeto 1: Garimpo (IA) -->
           <article class="project-card">
             <div class="project-card__media">
               <img
@@ -211,18 +212,17 @@
               />
             </div>
             <div class="project-card__tags">
-              <span>REACT</span><span>TYPESCRIPT</span><span>VITE</span
-              ><span>NODE.JS</span><span>DOCKER</span><span>POSTGRESQL</span
-              ><span>JWT</span>
+              <span>REACT</span><span>TYPESCRIPT</span><span>NODE.JS</span
+              ><span>LANGCHAIN</span><span>OLLAMA</span><span>POSTGRESQL</span>
             </div>
             <h3 class="project-card__title">
               Garimpo — Assistente de cinema com IA
             </h3>
             <p class="project-card__desc">
-              Aplicação full-stack que conversa com uma IA (GPT-4o) para
-              recomendar filmes, explorar títulos e ver detalhes de produções.
-              Respostas em tempo real com Server-Sent Events (SSE), integração
-              com TMDB e LangChain.js no back-end.
+              Aplicação full-stack que conversa com uma IA (GPT-4o/Ollama local)
+              para recomendar filmes de forma contextual. Respostas em tempo
+              real com Server-Sent Events (SSE), processamento de fluxos
+              dinâmicos com LangChain.js e Tool Calling no back-end.
             </p>
             <div class="project-card__actions">
               <a
@@ -234,20 +234,22 @@
               >
             </div>
           </article>
+
+          <!-- Projeto 2: AssetCore (Engenharia de Software) -->
           <article class="project-card">
             <div class="project-card__media project-card__media--placeholder">
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
             <div class="project-card__tags">
-              <span>REACT</span><span>TYPESCRIPT</span><span>MUI</span
-              ><span>EXPRESS</span><span>POSTGRESQL</span><span>DOCKER</span>
+              <span>REACT</span><span>TYPESCRIPT</span><span>EXPRESS</span
+              ><span>POSTGRESQL</span><span>DOCKER</span>
             </div>
             <h3 class="project-card__title">AssetCore — Gestão de ativos</h3>
             <p class="project-card__desc">
-              Sistema full-stack para organização e gestão de ativos, com foco
-              em arquitetura em camadas na API (Node.js + Express), interface em
-              React com Material UI e persistência em PostgreSQL em ambiente
-              Linux com Docker.
+              Sistema corporativo full-stack para organização e gestão de ativos
+              físicos e lógicos. Construído com arquitetura de software em
+              camadas no back-end (Node.js + Express), validação rígida de dados
+              e persistência em PostgreSQL conteinerizado.
             </p>
             <div class="project-card__actions">
               <a
@@ -259,24 +261,26 @@
               >
             </div>
           </article>
+
+          <!-- Projeto 3: Scanpy (Hacking & Cybersecurity) -->
           <article class="project-card">
             <div class="project-card__media project-card__media--placeholder">
-              <i class="fa-solid fa-key" aria-hidden="true"></i>
+              <i class="fa-solid fa-terminal" aria-hidden="true"></i>
             </div>
             <div class="project-card__tags">
-              <span>NODE.JS</span><span>EXPRESS</span><span>TYPESCRIPT</span
-              ><span>JWT</span><span>POSTGRESQL</span><span>DOCKER</span>
+              <span>PYTHON</span><span>NMAP</span><span>SECURITY</span
+              ><span>RECON</span><span>LINUX</span>
             </div>
-            <h3 class="project-card__title">API de autenticação com Docker</h3>
+            <h3 class="project-card__title">Scanpy — Automação de Recon</h3>
             <p class="project-card__desc">
-              API RESTful para cadastro e login com JSON Web Tokens (JWT).
-              Objetivo central: containerizar app Node.js e banco com Docker
-              Compose para ambiente portátil, consistente e fácil de reproduzir
-              em qualquer máquina.
+              Script utilitário em Python integrado ao Nmap para automatizar a
+              varredura de redes locais, detecção rápida de hosts ativos,
+              descoberta de portas abertas e fingerprinting de sistemas
+              operacionais. Foco em inteligência e reconhecimento ágil.
             </p>
             <div class="project-card__actions">
               <a
-                href="https://github.com/santosfabin/API_Login_com_docker_compose"
+                href="https://github.com/santosfabin/Scanpy"
                 class="btn btn--outline btn--sm"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -287,191 +291,202 @@
         </div>
 
         <div id="panel-more-projects" class="projects-more" hidden>
-          <p class="projects-more__intro">
-            Outros repositórios no GitHub — aplicações anteriores, experimentos
-            de interface e ferramentas pontuais.
-          </p>
-
           <div class="projects-more__group">
             <h3 class="projects-more__heading">Aplicações web</h3>
             <div class="projects-grid projects-grid--more">
-            <article class="project-card">
-              <div class="project-card__media project-card__media--placeholder">
-                <i class="fa-solid fa-scissors" aria-hidden="true"></i>
-              </div>
-              <div class="project-card__tags">
-                <span>JAVASCRIPT</span><span>NODE.JS</span><span>EXPRESS</span
-                ><span>POSTGRESQL</span>
-              </div>
-              <h3 class="project-card__title">
-                EasyBarber — Plataforma para barbearias
-              </h3>
-              <p class="project-card__desc">
-                Desenvolvido em grupo: barbearias divulgam serviços e recebem
-                agendamentos online. SPA em JavaScript no front, API Node.js +
-                Express e PostgreSQL em servidor Linux.
-              </p>
-              <div class="project-card__actions">
-                <a
-                  href="https://github.com/santosfabin/easyBarber"
-                  class="btn btn--outline btn--sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i> Código</a
+              <article class="project-card">
+                <div
+                  class="project-card__media project-card__media--placeholder"
                 >
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-card__media project-card__media--placeholder">
-                <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
-              </div>
-              <div class="project-card__tags">
-                <span>JAVASCRIPT</span><span>CSS</span>
-              </div>
-              <h3 class="project-card__title">Randomix — Sorteios</h3>
-              <p class="project-card__desc">
-                Sorteios e promoções com fluxo direto e resultado transparente.
-                Front-end em JavaScript e CSS para eventos que precisam de um
-                processo simples e confiável.
-              </p>
-              <div class="project-card__actions">
-                <a
-                  href="https://github.com/santosfabin/Randomix"
-                  class="btn btn--outline btn--sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i> Código</a
+                  <i class="fa-solid fa-key" aria-hidden="true"></i>
+                </div>
+                <div class="project-card__tags">
+                  <span>NODE.JS</span><span>EXPRESS</span><span>JWT</span
+                  ><span>POSTGRESQL</span><span>DOCKER</span>
+                </div>
+                <h3 class="project-card__title">API de login com Docker</h3>
+                <p class="project-card__desc">
+                  API RESTful focada em autenticação com tokens JWT, tratamento
+                  de senhas criptografadas e ambiente portátil encapsulado com
+                  Docker Compose.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/santosfabin/API_Login_com_docker_compose"
+                    class="btn btn--outline btn--sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> Código</a
+                  >
+                </div>
+              </article>
+              <article class="project-card">
+                <div
+                  class="project-card__media project-card__media--placeholder"
                 >
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-card__media project-card__media--placeholder">
-                <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
-              </div>
-              <div class="project-card__tags"><span>REACT</span></div>
-              <h3 class="project-card__title">
-                BeeSocy — Hub de redes sociais
-              </h3>
-              <p class="project-card__desc">
-                Página única para reunir links e perfis sociais — experimento
-                de interface em React para centralizar presença digital.
-              </p>
-              <div class="project-card__actions">
-                <a
-                  href="https://github.com/BeeSocy/beesocy"
-                  class="btn btn--outline btn--sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i> Código</a
+                  <i class="fa-solid fa-scissors" aria-hidden="true"></i>
+                </div>
+                <div class="project-card__tags">
+                  <span>JAVASCRIPT</span><span>NODE.JS</span><span>EXPRESS</span
+                  ><span>POSTGRESQL</span>
+                </div>
+                <h3 class="project-card__title">
+                  EasyBarber — Plataforma para barbearias
+                </h3>
+                <p class="project-card__desc">
+                  Desenvolvido em grupo: barbearias divulgam serviços e recebem
+                  agendamentos online. SPA em JavaScript no front, API Node.js +
+                  Express e PostgreSQL em servidor Linux.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/santosfabin/easyBarber"
+                    class="btn btn--outline btn--sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> Código</a
+                  >
+                </div>
+              </article>
+              <article class="project-card">
+                <div
+                  class="project-card__media project-card__media--placeholder"
                 >
-              </div>
-            </article>
+                  <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
+                </div>
+                <div class="project-card__tags">
+                  <span>JAVASCRIPT</span><span>CSS</span>
+                </div>
+                <h3 class="project-card__title">Randomix — Sorteios</h3>
+                <p class="project-card__desc">
+                  Sorteios e promoções com fluxo direto e resultado
+                  transparente. Front-end em JavaScript e CSS para eventos que
+                  precisam de um processo simples e confiável.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/santosfabin/Randomix"
+                    class="btn btn--outline btn--sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> Código</a
+                  >
+                </div>
+              </article>
             </div>
           </div>
 
           <div class="projects-more__group">
             <h3 class="projects-more__heading">Interfaces e ferramentas</h3>
             <div class="projects-grid projects-grid--more">
-            <article class="project-card">
-              <div class="project-card__media project-card__media--placeholder">
-                <img
-                  src="assets/Steam/Home.png"
-                  alt="Interface do clone da biblioteca Steam"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-card__tags">
-                <span>HTML</span><span>CSS</span>
-              </div>
-              <h3 class="project-card__title">Clone da biblioteca Steam</h3>
-              <p class="project-card__desc">
-                Recriação da biblioteca desktop da Steam em HTML e CSS, com foco
-                em fidelidade visual e layout para telas grandes.
-              </p>
-              <div class="project-card__actions">
-                <a
-                  href="https://github.com/santosfabin/steam-library"
-                  class="btn btn--outline btn--sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i> Código</a
+              <article class="project-card">
+                <div
+                  class="project-card__media project-card__media--placeholder"
                 >
-                <a
-                  href="https://santosfabin.github.io/steam-library/"
-                  class="btn btn--primary btn--sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Demo <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-card__media project-card__media--placeholder">
-                <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
-              </div>
-              <div class="project-card__tags">
-                <span>DOCUMENTAÇÃO</span><span>GIT</span>
-              </div>
-              <h3 class="project-card__title">Manual-Git</h3>
-              <p class="project-card__desc">
-                Referência sobre Git para a comunidade: comandos do dia a dia,
-                fluxos de trabalho e tópicos intermediários.
-              </p>
-              <div class="project-card__actions">
-                <a
-                  href="https://github.com/santosfabin/Manual-Git"
-                  class="btn btn--outline btn--sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i> Código</a
+                  <img
+                    src="assets/Steam/Home.png"
+                    alt="Interface do clone da biblioteca Steam"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="project-card__tags">
+                  <span>HTML</span><span>CSS</span>
+                </div>
+                <h3 class="project-card__title">Clone da biblioteca Steam</h3>
+                <p class="project-card__desc">
+                  Recriação da biblioteca desktop da Steam em HTML e CSS, com
+                  foco em fidelidade visual e layout para telas grandes.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/santosfabin/steam-library"
+                    class="btn btn--outline btn--sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> Código</a
+                  >
+                  <a
+                    href="https://santosfabin.github.io/steam-library/"
+                    class="btn btn--primary btn--sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </article>
+              <article class="project-card">
+                <div
+                  class="project-card__media project-card__media--placeholder"
                 >
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-card__media project-card__media--placeholder">
-                <i class="fa-brands fa-python" aria-hidden="true"></i>
-              </div>
-              <div class="project-card__tags">
-                <span>PYTHON</span><span>NMAP</span>
-              </div>
-              <h3 class="project-card__title">Scanpy — Varredura de rede</h3>
-              <p class="project-card__desc">
-                Script em Python com Nmap para mapear hosts e serviços em rede
-                local — ferramenta pontual de diagnóstico.
-              </p>
-              <div class="project-card__actions">
-                <a
-                  href="https://github.com/santosfabin/Scanpy"
-                  class="btn btn--outline btn--sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i> Código</a
+                  <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+                </div>
+                <div class="project-card__tags">
+                  <span>DOCUMENTAÇÃO</span><span>GIT</span>
+                </div>
+                <h3 class="project-card__title">Manual-Git</h3>
+                <p class="project-card__desc">
+                  Referência sobre Git para a comunidade: comandos do dia a dia,
+                  fluxos de trabalho e tópicos intermediários.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/santosfabin/Manual-Git"
+                    class="btn btn--outline btn--sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> Código</a
+                  >
+                </div>
+              </article>
+              <article class="project-card">
+                <div
+                  class="project-card__media project-card__media--placeholder"
                 >
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-card__media project-card__media--placeholder">
-                <i class="fa-brands fa-windows" aria-hidden="true"></i>
-              </div>
-              <div class="project-card__tags"><span>REACT</span></div>
-              <h3 class="project-card__title">
-                WGM — Windows Guardian Monitor
-              </h3>
-              <p class="project-card__desc">
-                Landing em React para distribuição de ferramenta de
-                monitoramento Windows — foco em interface e distribuição do
-                produto.
-              </p>
-              <div class="project-card__actions">
-                <a
-                  href="https://github.com/Windows-Guardian-Monitor/WGM-P"
-                  class="btn btn--outline btn--sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i> Código</a
+                  <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+                </div>
+                <div class="project-card__tags"><span>REACT</span></div>
+                <h3 class="project-card__title">
+                  BeeSocy — Hub de redes sociais
+                </h3>
+                <p class="project-card__desc">
+                  Página única para reunir links e perfis sociais — experimento
+                  de interface em React para centralizar presença digital.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/BeeSocy/beesocy"
+                    class="btn btn--outline btn--sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> Código</a
+                  >
+                </div>
+              </article>
+              <article class="project-card">
+                <div
+                  class="project-card__media project-card__media--placeholder"
                 >
-              </div>
-            </article>
+                  <i class="fa-brands fa-windows" aria-hidden="true"></i>
+                </div>
+                <div class="project-card__tags"><span>REACT</span></div>
+                <h3 class="project-card__title">
+                  WGM — Windows Guardian Monitor
+                </h3>
+                <p class="project-card__desc">
+                  Landing em React para distribuição de ferramenta de
+                  monitoramento Windows — foco em interface e distribuição do
+                  produto.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/Windows-Guardian-Monitor/WGM-P"
+                    class="btn btn--outline btn--sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> Código</a
+                  >
+                </div>
+              </article>
             </div>
           </div>
         </div>
@@ -490,6 +505,485 @@
               aria-hidden="true"
             ></i>
           </button>
+        </div>
+      </section>
+
+      <!-- Segurança da Informação -->
+      <section
+        class="section section--security"
+        id="seguranca"
+        aria-labelledby="sec-titulo"
+      >
+        <h2 id="sec-titulo" class="section__title section__title--center">
+          Segurança da Informação
+        </h2>
+        <p class="section__subtitle">
+          Práticas em laboratório e formação — aplicações web vulneráveis,
+          infraestrutura de redes e desafios em ambiente controlado.
+        </p>
+
+        <div class="sec-grid">
+          <article class="sec-card">
+            <div class="sec-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-bug"></i>
+            </div>
+            <h3 class="sec-card__title">DVWA — Web vulnerável</h3>
+            <p class="sec-card__text">
+              Diversas salas e desafios no Damn Vulnerable Web App: exploração
+              e análise de falhas web clássicas (SQL Injection, XSS, File
+              Inclusion) em ambiente controlado, para entender o
+              ataque e a correção.
+            </p>
+            <div class="sec-card__tags">
+              <span>DVWA</span><span>BURP SUITE</span><span>OWASP</span
+              ><span>SQLi</span><span>XSS</span>
+            </div>
+          </article>
+
+          <article class="sec-card">
+            <div class="sec-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="sec-card__title">Redes &amp; Cisco</h3>
+            <p class="sec-card__text">
+              Projetos práticos de infraestrutura: modelagem de redes (incluindo
+              cenário de escola), configuração de servidor DHCP e serviços de
+              rede com roteamento e laboratórios Cisco.
+            </p>
+            <div class="sec-card__tags">
+              <span>CISCO</span><span>DHCP</span><span>WIRESHARK</span
+              ><span>NMAP</span>
+            </div>
+          </article>
+
+          <article class="sec-card">
+            <div class="sec-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-wifi"></i>
+            </div>
+            <h3 class="sec-card__title">Lab FATEC — WPA2</h3>
+            <p class="sec-card__text">
+              Em uma prova prática da FATEC, o desafio era conectar em uma rede
+              Wi‑Fi protegida com WPA2 (quebra controlada no lab) e, a partir
+              disso, acessar um servidor da rede para obter um arquivo específico.
+            </p>
+            <div class="sec-card__tags">
+              <span>WPA2</span><span>FATEC</span><span>AIRCRACK</span
+              ><span>WIRELESS</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="sec-divider">
+          <h3 class="sec-divider__title">TryHackMe</h3>
+          <p class="sec-divider__subtitle">
+            Insignias conquistadas e uma amostra das salas concluídas — o
+            restante está no perfil.
+          </p>
+        </div>
+
+        <h4 class="thm-subtitle">Insignias</h4>
+        <ul class="thm-badges" aria-label="Insignias TryHackMe">
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/mr-robot.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">Mr. Robot</span>
+            <span class="thm-badge__meta">Rare · 3.1%</span>
+          </li>
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/hash-cracker.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">Hash Cracker</span>
+            <span class="thm-badge__meta">Rare · 4.5%</span>
+          </li>
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/linux-privesc.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">Linux PrivEsc</span>
+            <span class="thm-badge__meta">Rare · 2.3%</span>
+          </li>
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/burped.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">Burp'ed</span>
+            <span class="thm-badge__meta">Rare · 5.1%</span>
+          </li>
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/intro-web-hacking.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">Intro to Web Hacking</span>
+            <span class="thm-badge__meta">Rare · 5.5%</span>
+          </li>
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/pentesting-principles.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">Pentesting Principles</span>
+            <span class="thm-badge__meta">Rare · 8.5%</span>
+          </li>
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/networking-nerd.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">Networking Nerd</span>
+            <span class="thm-badge__meta">Common · 17.4%</span>
+          </li>
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/world-wide-web.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">World Wide Web</span>
+            <span class="thm-badge__meta">Common · 20.5%</span>
+          </li>
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/webbed.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">Webbed</span>
+            <span class="thm-badge__meta">Common · 23.5%</span>
+          </li>
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/cat-linux.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">cat linux.txt</span>
+            <span class="thm-badge__meta">Common · 28.2%</span>
+          </li>
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/30-day-streak.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">30 Day Streak</span>
+            <span class="thm-badge__meta">Common · 10.2%</span>
+          </li>
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/7-day-streak.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">7 Day Streak</span>
+            <span class="thm-badge__meta">Common · 21.7%</span>
+          </li>
+          <li class="thm-badge">
+            <span class="thm-badge__icon"
+              ><img
+                src="assets/thm-badges/first-four.png"
+                alt=""
+                width="92"
+                height="92"
+                loading="lazy"
+            /></span>
+            <span class="thm-badge__name">First Four</span>
+            <span class="thm-badge__meta">Common · 27.4%</span>
+          </li>
+        </ul>
+
+        <h4 class="thm-subtitle">Salas concluídas</h4>
+        <ul class="thm-rooms" aria-label="Algumas salas TryHackMe concluídas">
+          <li>
+            <a
+              href="https://tryhackme.com/room/jurassicpark"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--hard"
+                aria-label="Hard"
+                title="Hard"
+                ><i></i><i></i><i></i></span
+              >Jurassic Park</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/mrrobot"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--medium"
+                aria-label="Medium"
+                title="Medium"
+                ><i></i><i></i><i></i></span
+              >Mr Robot CTF</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/wonderland"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--medium"
+                aria-label="Medium"
+                title="Medium"
+                ><i></i><i></i><i></i></span
+              >Wonderland</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/linuxprivesc"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--medium"
+                aria-label="Medium"
+                title="Medium"
+                ><i></i><i></i><i></i></span
+              >Linux PrivEsc</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/picklerick"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--easy"
+                aria-label="Easy"
+                title="Easy"
+                ><i></i><i></i><i></i></span
+              >Pickle Rick</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/agentsudoctf"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--easy"
+                aria-label="Easy"
+                title="Easy"
+                ><i></i><i></i><i></i></span
+              >Agent Sudo</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/yearoftherabbit"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--easy"
+                aria-label="Easy"
+                title="Easy"
+                ><i></i><i></i><i></i></span
+              >Year of the Rabbit</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/lianyu"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--easy"
+                aria-label="Easy"
+                title="Easy"
+                ><i></i><i></i><i></i></span
+              >Lian_Yu</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/fileinc"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--medium"
+                aria-label="Medium"
+                title="Medium"
+                ><i></i><i></i><i></i></span
+              >File Inclusion</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/sqlinjectionlm"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--medium"
+                aria-label="Medium"
+                title="Medium"
+                ><i></i><i></i><i></i></span
+              >SQL Injection</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/crackthehash"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--easy"
+                aria-label="Easy"
+                title="Easy"
+                ><i></i><i></i><i></i></span
+              >Crack the hash</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/cyborgt8"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--easy"
+                aria-label="Easy"
+                title="Easy"
+                ><i></i><i></i><i></i></span
+              >Cyborg</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/brooklynninenine"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--easy"
+                aria-label="Easy"
+                title="Easy"
+                ><i></i><i></i><i></i></span
+              >Brooklyn Nine Nine</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/startup"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--easy"
+                aria-label="Easy"
+                title="Easy"
+                ><i></i><i></i><i></i></span
+              >Startup</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/ignite"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--easy"
+                aria-label="Easy"
+                title="Easy"
+                ><i></i><i></i><i></i></span
+              >Ignite</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/wgelctf"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--easy"
+                aria-label="Easy"
+                title="Easy"
+                ><i></i><i></i><i></i></span
+              >Wgel CTF</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/room/easyctf"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span
+                class="thm-diff thm-diff--easy"
+                aria-label="Easy"
+                title="Easy"
+                ><i></i><i></i><i></i></span
+              >Simple CTF</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tryhackme.com/p/santosfabin"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ver mais …</a
+            >
+          </li>
+        </ul>
+
+        <div class="thm-profile-cta">
+          <a
+            href="https://tryhackme.com/p/santosfabin"
+            class="btn btn--primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver perfil completo no TryHackMe
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
       </section>
 
@@ -513,10 +1007,9 @@
             <p class="section__lead">
               Olá, sou <strong>Fabiano Vieira dos Santos</strong>. Trabalho no
               ecossistema JavaScript de ponta a ponta — interfaces responsivas,
-              integrações e APIs estáveis. Comecei em dev no técnico,
-              aprofundei segurança na FATEC e hoje atuo em produto web
-              full-stack. Valorizo código claro, testes e entrega contínua
-              junto ao time.
+              integrações e APIs estáveis. Comecei em dev no técnico, aprofundei
+              segurança na FATEC e hoje atuo em produto web full-stack. Valorizo
+              código claro, testes e entrega contínua junto ao time.
             </p>
           </div>
         </div>
@@ -567,9 +1060,8 @@
             </h2>
             <p class="section__lead">
               Experiência no desenvolvimento de aplicações full-stack, atuando
-              em interfaces modernas, APIs REST e integrações entre front-end e
-              back-end. Foco em código escalável, manutenção e entrega funcional
-              de produtos.
+              em interfaces modernas, APIs REST e integrações seguras entre
+              front-end e back-end.
             </p>
           </div>
 
@@ -603,6 +1095,41 @@
             </div>
 
             <div class="skill-panel">
+              <h3 class="skill-panel__label">Inteligência Artificial</h3>
+              <div class="skill-pills">
+                <span>LangChain.js</span>
+                <span>OpenAI API</span>
+                <span>Ollama (IA Local)</span>
+                <span>Agentes de IA</span>
+                <span>Tool Calling</span>
+                <span>Streaming (SSE)</span>
+              </div>
+            </div>
+
+            <div class="skill-panel">
+              <h3 class="skill-panel__label">Segurança & Redes</h3>
+              <div class="skill-pills">
+                <span>OWASP Top 10</span>
+                <span>PortSwigger Academy</span>
+                <span>DVWA</span>
+                <span>Burp Suite</span>
+                <span>Wireshark</span>
+                <span>Nmap</span>
+                <span>Shodan</span>
+                <span>Metasploit</span>
+                <span>Hydra</span>
+                <span>John the Ripper</span>
+                <span>Gobuster</span>
+                <span>Netcat</span>
+                <span>Ngrok</span>
+                <span>Maltego</span>
+                <span>Whois</span>
+                <span>Tor / Proxychains</span>
+                <span>Criptografia & Hashes</span>
+              </div>
+            </div>
+
+            <div class="skill-panel">
               <h3 class="skill-panel__label">Infraestrutura & Ferramentas</h3>
               <div class="skill-pills">
                 <span>Git</span>
@@ -620,13 +1147,8 @@
                 <span>Testes automatizados</span>
                 <span>Redis</span>
                 <span>Python</span>
-              </div>
-            </div>
-
-            <div class="skill-panel">
-              <h3 class="skill-panel__label">Em estudo</h3>
-              <div class="skill-pills">
-                <span>LLMs e IA aplicada</span>
+                <span>Sockets (TCP/UDP)</span>
+                <span>Cisco Routing</span>
               </div>
             </div>
           </div>
@@ -654,8 +1176,8 @@
             <h3>Segurança da Informação</h3>
             <p>FATEC · Jan 2022 — Dez 2024</p>
             <p class="education-card__note">
-              Aprofundamento em redes e segurança — reforça auth, infra e
-              boas práticas no código.
+              Aprofundamento em redes e segurança — reforça auth, infra e boas
+              práticas no código.
             </p>
           </div>
           <div class="education-card">
@@ -665,127 +1187,6 @@
               Formação intensiva em desenvolvimento web full-stack; estágio
               back-end na mesma instituição (Alpha Digital).
             </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Estudos -->
-      <section
-        class="section section--books"
-        id="estudos"
-        aria-labelledby="books-titulo"
-      >
-        <h2 id="books-titulo" class="section__title section__title--center">
-          Estudos e leitura
-        </h2>
-
-        <p class="section__subtitle">
-          Materiais que uso para evoluir em arquitetura, system design,
-          comunicação técnica e tomada de decisão.
-        </p>
-
-        <!-- Lendo agora -->
-        <div class="books-block">
-          <h3 class="books-block__title">Lendo agora</h3>
-
-          <div class="books-grid">
-            <article class="book-card">
-              <div class="book-card__cover">
-                <img
-                  src="assets/books/programador-pragmatico.jpg"
-                  alt="O Programador Pragmático"
-                />
-              </div>
-              <div class="book-card__content">
-                <strong>O Programador Pragmático</strong>
-                <span>Andrew Hunt & David Thomas</span>
-                <small class="book-note">
-                  Melhora a forma como estruturo código e tomo decisões de
-                  arquitetura.
-                </small>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Próximas leituras -->
-        <div class="books-block">
-          <h3 class="books-block__title">Próximas leituras</h3>
-
-          <div class="books-grid">
-            <article class="book-card">
-              <div class="book-card__cover">
-                <img
-                  src="assets/books/clean-architecture.jpg"
-                  alt="Clean Architecture"
-                />
-              </div>
-              <div class="book-card__content">
-                <strong>Clean Architecture</strong>
-                <span>Robert C. Martin</span>
-                <small class="book-note">
-                  Organização de código e arquitetura orientada a manutenção.
-                </small>
-              </div>
-            </article>
-
-            <article class="book-card">
-              <div class="book-card__cover">
-                <img
-                  src="assets/books/system-design.jpg"
-                  alt="System Design Interview"
-                />
-              </div>
-              <div class="book-card__content">
-                <strong>System Design Interview</strong>
-                <span>Alex Xu</span>
-                <small class="book-note">
-                  Desenvolvimento de pensamento para projetar sistemas
-                  escaláveis.
-                </small>
-              </div>
-            </article>
-
-            <article class="book-card">
-              <div class="book-card__cover">
-                <img
-                  src="assets/books/Rápido-e-Devagar.jpg"
-                  alt="Rápido e Devagar"
-                />
-              </div>
-              <div class="book-card__content">
-                <strong>Rápido e Devagar</strong>
-                <span>Daniel Kahneman</span>
-                <small class="book-note">
-                  Melhora a tomada de decisão e reduz vieses ao analisar
-                  problemas complexos.
-                </small>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Inglês -->
-        <div class="books-block">
-          <h3 class="books-block__title">Inglês para desenvolvimento</h3>
-
-          <div class="books-grid">
-            <article class="book-card book-card--secondary">
-              <div class="book-card__cover">
-                <img
-                  src="assets/books/grammar-in-use.png"
-                  alt="Essential Grammar in Use"
-                />
-              </div>
-              <div class="book-card__content">
-                <strong>Essential Grammar in Use</strong>
-                <span>Raymond Murphy</span>
-                <small class="book-note">
-                  Fortalecendo base gramatical para leitura e escrita técnica em
-                  inglês.
-                </small>
-              </div>
-            </article>
           </div>
         </div>
       </section>
@@ -848,6 +1249,13 @@
                   rel="noopener noreferrer"
                   >LinkedIn</a
                 >
+                ·
+                <a
+                  href="https://tryhackme.com/p/santosfabin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >TryHackMe</a
+                >
               </div>
             </div>
           </div>
@@ -866,7 +1274,6 @@
           <a href="#sobre">Sobre</a>
           <a href="#habilidades">Habilidades</a>
           <a href="#formacao">Formação</a>
-          <a href="#estudos">Estudos</a>
           <a href="#contato">Contato</a>
         </nav>
         <p class="site-footer__copy">
