@@ -59,7 +59,10 @@ OWASP Top 10 · Burp Suite · Wireshark · Nmap · DVWA · JWT · OAuth
 Scrum · Kanban · Git Flow
 Git · GitHub Actions · Docker · Playwright · CI/CD · Stripe · AbacatePay · Bash
 
-**Idiomas:** Inglês intermediário
+**Idiomas:**
+
+- Inglês intermediário
+- Espanhol intermediário
 
 ---
 
