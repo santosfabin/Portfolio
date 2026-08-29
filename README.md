@@ -8,8 +8,8 @@ Este repositório contém o código-fonte da minha página de portfólio, onde a
 
 ## 👤 Fabiano Vieira dos Santos
 
-Desenvolvedor Full-Stack · React · TypeScript · Node.js · IA aplicada
-São Paulo (SP) · (11) 95298-2467 · fsfabianosantos03@gmail.com
+- Desenvolvedor Full-Stack · React · TypeScript · Node.js · IA aplicada
+- São Paulo (SP) · (11) 95298-2467 · fsfabianosantos03@gmail.com
 
 [LinkedIn](https://www.linkedin.com/in/santosfabin) · [GitHub](https://github.com/santosfabin) · [Portfólio](https://santosfabin.github.io/Portfolio/) · [TryHackMe](https://tryhackme.com/p/santosfabin)
 
@@ -17,7 +17,7 @@ São Paulo (SP) · (11) 95298-2467 · fsfabianosantos03@gmail.com
 
 ## ✨ Resumo
 
-Full-Stack com React, TypeScript e NestJS em produtos reais; projetos de IA (agentes, tool calling, SSE) e formação em Segurança da Informação (FATEC). Foco em APIs seguras (auth/RBAC, OWASP) e consciência de riscos em LLM (prompt injection, vazamento de contexto).
+- Full-Stack com React, TypeScript e NestJS em produtos reais; projetos de IA (agentes, tool calling, SSE) e formação em Segurança da Informação (FATEC). Foco em APIs seguras (auth/RBAC, OWASP) e consciência de riscos em LLM (prompt injection, vazamento de contexto).
 
 ---
 
@@ -36,28 +36,28 @@ Melhorias na API Laravel: paginação e estruturação de dados nos endpoints, r
 
 ## 🚀 Projetos
 
-**Garimpo** ([GitHub](https://github.com/santosfabin/Garimpo)) — Chat com LLM (OpenAI/Ollama), LangChain.js, agentes + tool calling, streaming SSE; React, TypeScript, Node, PostgreSQL.
-**AssetCore** — Full-stack com arquitetura em camadas (Express + PostgreSQL + Docker).
-**API Login** — Auth JWT + Docker Compose.
+- **Garimpo** ([GitHub](https://github.com/santosfabin/Garimpo)) — Chat com LLM (OpenAI/Ollama), LangChain.js, agentes + tool calling, streaming SSE; React, TypeScript, Node, PostgreSQL.
+- **AssetCore** — Full-stack com arquitetura em camadas (Express + PostgreSQL + Docker).
+- **API Login** — Auth JWT + Docker Compose.
 
 ---
 
 ## 🎓 Formação
 
-**Desenvolvimento de Sistemas** — Alpha EdTech · Out 2024 – Out 2025
-**Segurança da Informação** — FATEC · Jan 2022 – Dez 2024
-**Técnico em Desenvolvimento de Sistemas** — ETEC · Ago 2021 – Dez 2022
+- **Desenvolvimento de Sistemas** — Alpha EdTech · Out 2024 – Out 2025
+- **Segurança da Informação** — FATEC · Jan 2022 – Dez 2024
+- **Técnico em Desenvolvimento de Sistemas** — ETEC · Ago 2021 – Dez 2022
 
 ---
 
 ## 🛠️ Skills
 
-React · TypeScript · JavaScript · Tailwind · React Query · Figma · HTML5 · CSS3
-Node.js · NestJS · APIs REST · Prisma · PostgreSQL · Express.js · Laravel · MongoDB · Redis · Digital Ocean
-LangChain.js · OpenAI API · Agentes de IA · Tool Calling · Streaming (SSE)
-OWASP Top 10 · Burp Suite · Wireshark · Nmap · DVWA · JWT · OAuth
-Scrum · Kanban · Git Flow
-Git · GitHub Actions · Docker · Playwright · CI/CD · Stripe · AbacatePay · Bash
+- React · TypeScript · JavaScript · Tailwind · React Query · Figma · HTML5 · CSS3
+- Node.js · NestJS · APIs REST · Prisma · PostgreSQL · Express.js · Laravel · MongoDB · Redis · Digital Ocean
+- LangChain.js · OpenAI API · Agentes de IA · Tool Calling · Streaming (SSE)
+- OWASP Top 10 · Burp Suite · Wireshark · Nmap · DVWA · JWT · OAuth
+- Scrum · Kanban · Git Flow
+- Git · GitHub Actions · Docker · Playwright · CI/CD · Stripe · AbacatePay · Bash
 
 **Idiomas:**
 
