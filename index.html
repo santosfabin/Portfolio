@@ -3,38 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fabiano Vieira dos Santos — Portfólio</title>
+    <title>
+      Fabiano Vieira dos Santos — Desenvolvedor Full-Stack &amp; Product
+      Engineer
+    </title>
     <meta
       name="description"
-      content="Desenvolvedor Full-Stack (React, TypeScript, Node) em São Paulo. Produtos web com IA aplicada e mentalidade de segurança desde o código."
+      content="Desenvolvedor Full-Stack (React, TypeScript, Node.js) em São Paulo. Aplicações web completas com IA aplicada, arquitetura segura (AppSec) e foco em tração/SEO técnico."
     />
-    <meta property="og:title" content="Fabiano Vieira dos Santos — Portfólio" />
     <meta
-      property="og:description"
-      content="Full-Stack com React e TypeScript. Experiência em produto, IA (LangChain/SSE) e desenvolvimento seguro."
+      name="keywords"
+      content="Desenvolvedor Full Stack, React, TypeScript, Node.js, NestJS, LangChain, AppSec, São Paulo, Growth Engineering, SEO Técnico"
     />
+    <meta name="author" content="Fabiano Vieira dos Santos" />
+    <link rel="canonical" href="https://santosfabin.github.io/Portfolio/" />
+
+    <!-- Open Graph / Redes Sociais -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
       content="https://santosfabin.github.io/Portfolio/"
     />
+    <meta
+      property="og:title"
+      content="Fabiano Vieira dos Santos — Desenvolvedor Full-Stack &amp; Product Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Engenharia de software ponta a ponta: React, TypeScript, Node.js, IA aplicada e segurança de aplicações."
+    />
     <meta property="og:image" content="https://github.com/santosfabin.png" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Fabiano Vieira dos Santos — Desenvolvedor Full-Stack"
+    />
+    <meta
+      name="twitter:description"
+      content="Aplicações web completas com IA, código seguro e visão de produto."
+    />
+    <meta name="twitter:image" content="https://github.com/santosfabin.png" />
+
+    <!-- Favicon & Tema -->
     <link
       rel="icon"
       href="https://cdn-icons-png.flaticon.com/512/25/25231.png"
     />
     <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@500;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS & Ícones -->
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+
+    <!-- Schema Markup Estruturado (JSON-LD para SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fabiano Vieira dos Santos",
+        "jobTitle": "Full-Stack Developer & Product Engineer",
+        "url": "https://santosfabin.github.io/Portfolio/",
+        "image": "https://github.com/santosfabin.png",
+        "sameAs": [
+          "https://github.com/santosfabin",
+          "https://www.linkedin.com/in/santosfabin",
+          "https://tryhackme.com/p/santosfabin"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      }
+    </script>
   </head>
   <body>
     <a href="#conteudo-principal" class="skip-link">Ir ao conteúdo</a>
@@ -60,6 +115,7 @@
           <li><a href="#seguranca">Segurança</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#formacao">Formação</a></li>
+          <li><a href="#certificados">Certificados</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
         <div class="site-nav__actions">
@@ -86,21 +142,23 @@
     <main id="conteudo-principal">
       <!-- Hero -->
       <header class="hero">
-        <p class="hero__eyebrow">São Paulo (SP)</p>
+        <p class="hero__eyebrow">
+          São Paulo (SP) · Full-Stack &amp; Product Engineer
+        </p>
         <h1 class="hero__title">
-          Full-Stack que une produto, IA e código seguro
+          Construo aplicações web completas: código seguro, IA e foco em produto
         </h1>
         <p class="hero__lead">
-          Construo aplicações web de ponta a ponta com React, TypeScript e
-          Node.js — interfaces claras, APIs estáveis e integrações de pagamento.
-          Formação em Segurança da Informação (FATEC): uso o que aprendi em labs
-          e OWASP para blindar auth, APIs e fluxos com IA desde o código-fonte.
+          Desenvolvedor Full-Stack (React, TypeScript, Node.js) com formação em
+          Segurança da Informação (FATEC). Uno engenharia de software ponta a
+          ponta, integração de modelos de IA e práticas de AppSec a uma visão de
+          produto que inclui SEO técnico e rastreamento de métricas.
         </p>
         <div class="hero__cta">
-          <a href="#experiencia" class="btn btn--primary"
-            >Ver experiência
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
-          ></a>
+          <a href="#experiencia" class="btn btn--primary">
+            Ver experiência
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
           <a href="#contato" class="btn btn--ghost">Fale comigo</a>
         </div>
       </header>
@@ -114,21 +172,25 @@
         <div class="about-intro">
           <img
             id="profile-pic-img"
-            src=""
-            alt=""
+            src="https://github.com/santosfabin.png"
+            alt="Foto de Fabiano Vieira dos Santos"
             class="about-intro__photo"
             width="120"
             height="120"
+            loading="eager"
           />
           <div class="about-intro__text">
             <h2 id="sobre-titulo" class="section__title">Sobre</h2>
             <p class="section__lead">
-              Olá, sou <strong>Fabiano Vieira dos Santos</strong>, desenvolvedor
-              full-stack no ecossistema JavaScript (React, TypeScript, Node.js),
-              com experiência em projetos de IA aplicada (agentes,
-              streaming/SSE) e formação em Segurança da Informação pela FATEC —
-              aplico esse olhar de segurança na construção de autenticação, APIs
-              e produtos mais robustos.
+              Olá, sou <strong>Fabiano Vieira dos Santos</strong>. Atuo no
+              desenvolvimento de software de ponta a ponta no ecossistema
+              JavaScript/TypeScript (React, Node.js, NestJS). Combino a base
+              técnica de desenvolvimento com IA aplicada (LangChain, agentes e
+              streaming) e uma formação sólida em Segurança da Informação pela
+              FATEC — aplicando proteção de dados e OWASP direto na arquitetura.
+              Além da engenharia, integro práticas de SEO técnico, rastreamento
+              de tráfego e métricas de conversão para colocar produtos no ar com
+              tração real.
             </p>
           </div>
         </div>
@@ -137,28 +199,30 @@
             <div class="feature-card__icon" aria-hidden="true">
               <i class="fa-solid fa-layer-group"></i>
             </div>
-            <h3 class="feature-card__title">Produto full-stack</h3>
+            <h3 class="feature-card__title">Produto Full-Stack</h3>
             <p class="feature-card__text">
-              React, TypeScript, NestJS/Express, PostgreSQL e pagamentos.
+              Interfaces modernas em React/TS, APIs escaláveis com
+              NestJS/Express, bancos relacionais e fluxos de pagamento.
             </p>
           </article>
           <article class="feature-card">
             <div class="feature-card__icon" aria-hidden="true">
               <i class="fa-solid fa-robot"></i>
             </div>
-            <h3 class="feature-card__title">IA aplicada</h3>
+            <h3 class="feature-card__title">IA &amp; Engenharia</h3>
             <p class="feature-card__text">
-              LangChain.js, tool calling e streaming (SSE), chat com agentes e
-              respostas em tempo real.
+              Aplicações inteligentes com LangChain.js, chamadas de ferramentas
+              (Tool Calling), agentes autônomos e SSE.
             </p>
           </article>
           <article class="feature-card">
             <div class="feature-card__icon" aria-hidden="true">
               <i class="fa-solid fa-shield-halved"></i>
             </div>
-            <h3 class="feature-card__title">Segurança no código</h3>
+            <h3 class="feature-card__title">AppSec &amp; Growth</h3>
             <p class="feature-card__text">
-              OWASP, auth/RBAC e labs controlados (DVWA, PortSwigger, THM).
+              Segurança por design (OWASP, RBAC, JWT seguro) aliada a SEO
+              técnico, Core Web Vitals e métricas de conversão.
             </p>
           </article>
         </div>
@@ -173,9 +237,15 @@
         <h2 id="exp-titulo" class="section__title section__title--center">
           Experiência profissional
         </h2>
+        <p class="section__subtitle">
+          Atuação no desenvolvimento de produtos web, refatoração de sistemas,
+          integrações críticas e otimização de performance.
+        </p>
+
         <div class="timeline">
           <div class="timeline__line" aria-hidden="true"></div>
 
+          <!-- Experiência 1: Plumaa -->
           <article class="timeline-item timeline-item--right">
             <div class="timeline-node" aria-hidden="true"></div>
             <div class="exp-card">
@@ -185,22 +255,25 @@
               </div>
               <p class="exp-card__company">Plumaa</p>
               <p class="exp-card__desc">
-                Otimização da interface em React/TypeScript/Tailwind, com
-                padronização e criação de componentes. Consumo do estado global
-                existente via React Query. Integração de pagamentos com
-                AbacatePay, além de trabalho contínuo com Stripe para testes
-                automatizados. Testes automatizados com Playwright e uso de
-                Digital Ocean na infraestrutura do projeto.
+                Desenvolvimento e refatoração da interface da aplicação em
+                React/TypeScript, padronizando componentes reutilizáveis e
+                otimizando o consumo de estado global via React Query.
+                Integração completa de gateways de pagamento (AbacatePay e
+                Stripe) cobrindo fluxos de checkout e webhooks. Implementação de
+                testes automatizados E2E com Playwright para evitar regressões e
+                gerenciamento do deploy na infraestrutura Digital Ocean.
               </p>
               <div class="exp-card__tags">
-                <span>React</span><span>TypeScript</span><span>Tailwind</span
-                ><span>React Query</span><span>Stripe</span
-                ><span>Digital Ocean</span><span>NestJS</span><span>Prisma</span
-                ><span>Playwright</span><span>AbacatePay</span>
+                <span>React</span><span>TypeScript</span
+                ><span>Tailwind CSS</span><span>React Query</span
+                ><span>NestJS</span><span>Prisma</span><span>Stripe</span
+                ><span>AbacatePay</span><span>Playwright</span
+                ><span>Digital Ocean</span>
               </div>
             </div>
           </article>
 
+          <!-- Experiência 2: Plati Ai -->
           <article class="timeline-item timeline-item--left">
             <div class="timeline-node" aria-hidden="true"></div>
             <div class="exp-card">
@@ -210,20 +283,22 @@
               </div>
               <p class="exp-card__company">Plati Ai</p>
               <p class="exp-card__desc">
-                Corrigi bugs críticos em produção causados pelo alto volume de
-                logs soltos e desorganizados, que dificultavam a identificação
-                de falhas. Implementei uma visualização de logs no front-end,
-                agrupando as informações de forma simples e clara, facilitando o
-                diagnóstico de erros. Participação na migração gradual de API,
-                ajustando integrações e mantendo a interface estável durante o
-                processo.
+                Resolução de falhas críticas em produção causadas por
+                desorganização no volume de logs. Projetei e desenvolvi um
+                módulo de visualização e filtragem de logs na interface,
+                acelerando a triagem de erros pelo time técnico. Além disso,
+                participei ativamente da migração gradual da API REST, adaptando
+                os contratos no front-end em React/TypeScript e garantindo zero
+                indisponibilidade para os usuários.
               </p>
               <div class="exp-card__tags">
-                <span>React</span><span>TypeScript</span><span>APIs REST</span>
+                <span>React</span><span>TypeScript</span><span>REST APIs</span
+                ><span>Log Analysis</span><span>UI/UX</span>
               </div>
             </div>
           </article>
 
+          <!-- Experiência 3: Alpha Digital -->
           <article class="timeline-item timeline-item--right">
             <div class="timeline-node" aria-hidden="true"></div>
             <div class="exp-card">
@@ -235,12 +310,16 @@
                 Alpha Digital — Instituto Alpha Lumen (Alpha EdTech)
               </p>
               <p class="exp-card__desc">
-                Apliquei melhorias na API em Laravel, implementando paginação e
-                estruturando dados nos endpoints, reduzindo o tempo de resposta
-                de 2-5s para 1-3s e otimizando o consumo pelo front-end.
+                Otimização da arquitetura da API em Laravel, reestruturando
+                consultas no banco de dados, aplicando paginação e serialização
+                eficiente nos endpoints. Essas melhorias reduziram o tempo de
+                resposta das requisições de 2-5s para 1-3s (ganho de até 50% em
+                performance) e tornaram o consumo pelo front-end muito mais
+                fluido.
               </p>
               <div class="exp-card__tags">
-                <span>PHP</span><span>Laravel</span><span>React</span>
+                <span>PHP</span><span>Laravel</span><span>REST APIs</span
+                ><span>SQL</span><span>Otimização</span><span>React</span>
               </div>
             </div>
           </article>
@@ -257,9 +336,10 @@
           Projetos em destaque
         </h2>
         <p class="section__subtitle">
-          Projetos autorais com foco em produto full-stack, IA aplicada e
-          engenharia de software.
+          Aplicações com foco em arquitetura de software, inteligência
+          artificial aplicada e desenvolvimento seguro.
         </p>
+
         <div class="projects-grid projects-grid--featured">
           <!-- Projeto 1: Garimpo (IA) -->
           <article class="project-card">
@@ -275,12 +355,13 @@
               ><span>LANGCHAIN</span><span>OLLAMA</span><span>POSTGRESQL</span>
             </div>
             <h3 class="project-card__title">
-              Garimpo — Assistente de cinema com IA
+              Garimpo — Assistente de Cinema com IA
             </h3>
             <p class="project-card__desc">
-              Chat full-stack com IA (GPT-4o / Ollama local) para recomendar
-              filmes com contexto. Streaming em tempo real via SSE, agentes com
-              Tool Calling (LangChain.js) e persistência em PostgreSQL.
+              Aplicação interativa de recomendação cinematográfica contextual.
+              Arquitetura com agentes autônomos e Tool Calling via LangChain.js,
+              respostas em tempo real via Server-Sent Events (SSE) e
+              persistência de histórico no PostgreSQL.
             </p>
             <div class="project-card__actions">
               <a
@@ -288,7 +369,7 @@
                 class="btn btn--outline btn--sm"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><i class="fab fa-github"></i> Código</a
+                ><i class="fab fa-github"></i> Código no GitHub</a
               >
             </div>
           </article>
@@ -299,7 +380,7 @@
               <div class="project-card__media-mark" aria-hidden="true">
                 <span class="project-card__media-mark-label">AssetCore</span>
                 <span class="project-card__media-mark-sub"
-                  >Arquitetura em camadas · React · Express · PostgreSQL</span
+                  >Arquitetura em Camadas · Express · PostgreSQL · Docker</span
                 >
               </div>
             </div>
@@ -307,11 +388,12 @@
               <span>REACT</span><span>TYPESCRIPT</span><span>EXPRESS</span
               ><span>POSTGRESQL</span><span>DOCKER</span>
             </div>
-            <h3 class="project-card__title">AssetCore — Gestão de ativos</h3>
+            <h3 class="project-card__title">AssetCore — Gestão de Ativos</h3>
             <p class="project-card__desc">
-              Sistema full-stack para organização de ativos físicos e lógicos.
-              Back-end em camadas (Express), validação rígida de dados e
-              PostgreSQL conteinerizado — foco em organização e escalabilidade.
+              Sistema full-stack para governança de inventário físico e lógico.
+              Back-end construído em arquitetura modular com separação de
+              responsabilidades (Controllers/Services/Repositories), validação
+              rigorosa de payloads e banco PostgreSQL conteinerizado.
             </p>
             <div class="project-card__actions">
               <a
@@ -319,7 +401,7 @@
                 class="btn btn--outline btn--sm"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><i class="fab fa-github"></i> Código</a
+                ><i class="fab fa-github"></i> Código no GitHub</a
               >
             </div>
           </article>
@@ -328,9 +410,11 @@
           <article class="project-card">
             <div class="project-card__media">
               <div class="project-card__media-mark" aria-hidden="true">
-                <span class="project-card__media-mark-label">API Login</span>
+                <span class="project-card__media-mark-label"
+                  >Auth Microservice</span
+                >
                 <span class="project-card__media-mark-sub"
-                  >JWT · Docker Compose · PostgreSQL</span
+                  >JWT · Hashing Seguro · Docker Compose · PostgreSQL</span
                 >
               </div>
             </div>
@@ -338,11 +422,13 @@
               <span>NODE.JS</span><span>EXPRESS</span><span>JWT</span
               ><span>POSTGRESQL</span><span>DOCKER</span>
             </div>
-            <h3 class="project-card__title">API de login com Docker</h3>
+            <h3 class="project-card__title">
+              Microsserviço de Autenticação Segura
+            </h3>
             <p class="project-card__desc">
-              API RESTful de autenticação com JWT, hashing de senhas e ambiente
-              portátil com Docker Compose — base prática de auth segura para
-              apps full-stack.
+              API RESTful voltada à segurança de acesso, com geração e validação
+              de tokens JWT, políticas de hashing de senha com salt e
+              orquestração de ambiente isolado via Docker Compose.
             </p>
             <div class="project-card__actions">
               <a
@@ -350,7 +436,7 @@
                 class="btn btn--outline btn--sm"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><i class="fab fa-github"></i> Código</a
+                ><i class="fab fa-github"></i> Código no GitHub</a
               >
             </div>
           </article>
@@ -358,7 +444,9 @@
 
         <div id="panel-more-projects" class="projects-more" hidden>
           <div class="projects-more__group">
-            <h3 class="projects-more__heading">Experimentos e estudos</h3>
+            <h3 class="projects-more__heading">
+              Experimentos e outros projetos
+            </h3>
             <div class="projects-grid projects-grid--more">
               <article class="project-card">
                 <div class="project-card__media">
@@ -369,12 +457,13 @@
                   />
                 </div>
                 <div class="project-card__tags">
-                  <span>HTML</span><span>CSS</span>
+                  <span>HTML5</span><span>CSS3</span>
                 </div>
-                <h3 class="project-card__title">Clone da biblioteca Steam</h3>
+                <h3 class="project-card__title">Clone da Biblioteca Steam</h3>
                 <p class="project-card__desc">
-                  Recriação da biblioteca desktop da Steam em HTML e CSS, com
-                  foco em fidelidade visual e layout para telas grandes.
+                  Recriação minuciosa da interface desktop da Steam em HTML/CSS
+                  puro, explorando Flexbox e fidelidade visual em telas de alta
+                  resolução.
                 </p>
                 <div class="project-card__actions">
                   <a
@@ -393,6 +482,7 @@
                   ></a>
                 </div>
               </article>
+
               <article class="project-card">
                 <div class="project-card__media">
                   <div class="project-card__media-mark" aria-hidden="true">
@@ -400,7 +490,7 @@
                       >EasyBarber</span
                     >
                     <span class="project-card__media-mark-sub"
-                      >SPA · Node · PostgreSQL</span
+                      >SPA · Agendamentos · Node · PostgreSQL</span
                     >
                   </div>
                 </div>
@@ -409,12 +499,12 @@
                   ><span>POSTGRESQL</span>
                 </div>
                 <h3 class="project-card__title">
-                  EasyBarber — Plataforma para barbearias
+                  EasyBarber — Plataforma de Agendamentos
                 </h3>
                 <p class="project-card__desc">
-                  Projeto em grupo: barbearias divulgam serviços e recebem
-                  agendamentos online. SPA em JavaScript, API Node.js + Express
-                  e PostgreSQL.
+                  Aplicação web para barbearias gerenciarem serviços e
+                  agendamentos de clientes online. Arquitetura SPA integrada a
+                  API Node.js e banco relacional.
                 </p>
                 <div class="project-card__actions">
                   <a
@@ -426,23 +516,26 @@
                   >
                 </div>
               </article>
+
               <article class="project-card">
                 <div class="project-card__media">
                   <div class="project-card__media-mark" aria-hidden="true">
                     <span class="project-card__media-mark-label">Scanpy</span>
                     <span class="project-card__media-mark-sub"
-                      >Python · Nmap · Recon</span
+                      >Python · Nmap · Automação de Recon</span
                     >
                   </div>
                 </div>
                 <div class="project-card__tags">
                   <span>PYTHON</span><span>NMAP</span><span>LINUX</span>
                 </div>
-                <h3 class="project-card__title">Scanpy — Automação de Recon</h3>
+                <h3 class="project-card__title">
+                  Scanpy — Automação de Varredura
+                </h3>
                 <p class="project-card__desc">
-                  Script Python + Nmap para varredura de redes locais: hosts
-                  ativos, portas e fingerprint de SO — alinhado às práticas de
-                  segurança da formação.
+                  Script em Python com Nmap para descoberta de hosts ativos,
+                  mapeamento de portas abertas e identificação de serviços em
+                  redes locais.
                 </p>
                 <div class="project-card__actions">
                   <a
@@ -454,6 +547,7 @@
                   >
                 </div>
               </article>
+
               <article class="project-card">
                 <div class="project-card__media">
                   <div class="project-card__media-mark" aria-hidden="true">
@@ -461,17 +555,18 @@
                       >Manual-Git</span
                     >
                     <span class="project-card__media-mark-sub"
-                      >Documentação · Git</span
+                      >Documentação Técnica · Workflows</span
                     >
                   </div>
                 </div>
                 <div class="project-card__tags">
-                  <span>DOCUMENTAÇÃO</span><span>GIT</span>
+                  <span>GIT</span><span>DOCUMENTAÇÃO</span>
                 </div>
-                <h3 class="project-card__title">Manual-Git</h3>
+                <h3 class="project-card__title">Manual de Boas Práticas Git</h3>
                 <p class="project-card__desc">
-                  Referência sobre Git: comandos do dia a dia, fluxos de
-                  trabalho e tópicos intermediários.
+                  Guia prático de comandos, fluxos de trabalho colaborativos
+                  (Git Flow, Trunk-based), resolução de conflitos e boas
+                  práticas de versionamento.
                 </p>
                 <div class="project-card__actions">
                   <a
@@ -484,14 +579,15 @@
                 </div>
               </article>
             </div>
+
             <div class="thm-profile-cta">
               <a
-                href="https://github.com/santosfabin/"
+                href="https://github.com/santosfabin?tab=repositories"
                 class="btn btn--primary"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Ver perfil completo no GitHub
+                Ver todos os repositórios no GitHub
                 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </a>
             </div>
@@ -506,7 +602,7 @@
             aria-expanded="false"
             aria-controls="panel-more-projects"
           >
-            <span class="projects-toggle__label">Ver experimentos</span>
+            <span class="projects-toggle__label">Ver outros projetos</span>
             <i
               class="fa-solid fa-chevron-down projects-toggle__icon"
               aria-hidden="true"
@@ -515,35 +611,35 @@
         </div>
       </section>
 
-      <!-- Segurança da Informação -->
+      <!-- Segurança da Informação & AppSec -->
       <section
         class="section section--security"
         id="seguranca"
         aria-labelledby="sec-titulo"
       >
         <h2 id="sec-titulo" class="section__title section__title--center">
-          Segurança da Informação
+          Segurança da Informação &amp; AppSec
         </h2>
         <p class="section__subtitle">
-          Formação e labs em ambiente controlado — o objetivo é entender o
-          ataque para escrever aplicações e APIs mais seguras no dia a dia de
-          desenvolvimento.
+          Formação pela FATEC e laboratórios práticos. Compreender os vetores de
+          ataque é o que permite projetar e codificar sistemas defensivos,
+          blindando autenticação, APIs e regras de negócio.
         </p>
 
         <div class="sec-grid">
           <article class="sec-card">
             <div class="sec-card__icon" aria-hidden="true">
-              <i class="fa-solid fa-bug"></i>
+              <i class="fa-solid fa-shield-virus"></i>
             </div>
-            <h3 class="sec-card__title">DVWA — Web vulnerável</h3>
+            <h3 class="sec-card__title">OWASP Top 10 &amp; DVWA</h3>
             <p class="sec-card__text">
-              Diversas salas e desafios no Damn Vulnerable Web App: exploração e
-              análise de falhas web clássicas (SQL Injection, XSS, File
-              Inclusion) em ambiente controlado, para entender o ataque e a
-              correção.
+              Análise e exploração controlada de vulnerabilidades web críticas
+              (SQL Injection, Cross-Site Scripting (XSS), File Inclusion e CSRF)
+              para entender a anatomia do ataque e aplicar correções definitivas
+              no código-fonte.
             </p>
             <div class="sec-card__tags">
-              <span>DVWA</span><span>BURP SUITE</span><span>OWASP</span
+              <span>OWASP</span><span>BURP SUITE</span><span>DVWA</span
               ><span>SQLi</span><span>XSS</span>
             </div>
           </article>
@@ -552,45 +648,47 @@
             <div class="sec-card__icon" aria-hidden="true">
               <i class="fa-solid fa-network-wired"></i>
             </div>
-            <h3 class="sec-card__title">Redes &amp; Cisco</h3>
+            <h3 class="sec-card__title">Infraestrutura &amp; Redes</h3>
             <p class="sec-card__text">
-              Projetos práticos de infraestrutura: modelagem de redes (incluindo
-              cenário de escola), configuração de servidor DHCP e serviços de
-              rede com roteamento e laboratórios Cisco.
+              Modelagem de topologias de rede, roteamento de pacotes,
+              configuração de servidores DHCP e análise de tráfego em baixo
+              nível para garantir isolamento e tráfego seguro entre serviços.
             </p>
             <div class="sec-card__tags">
-              <span>CISCO</span><span>DHCP</span><span>WIRESHARK</span
-              ><span>NMAP</span>
+              <span>CISCO</span><span>WIRESHARK</span><span>NMAP</span
+              ><span>ROTEAMENTO</span>
             </div>
           </article>
 
           <article class="sec-card">
             <div class="sec-card__icon" aria-hidden="true">
-              <i class="fa-solid fa-wifi"></i>
+              <i class="fa-solid fa-lock"></i>
             </div>
-            <h3 class="sec-card__title">Lab FATEC — WPA2</h3>
+            <h3 class="sec-card__title">
+              Práticas de Autenticação &amp; Criptografia
+            </h3>
             <p class="sec-card__text">
-              Em uma prova prática da FATEC, o desafio era conectar em uma rede
-              Wi‑Fi protegida com WPA2 (quebra controlada no lab) e, a partir
-              disso, acessar um servidor da rede para obter um arquivo
-              específico.
+              Laboratórios práticos de protocolos seguros (WPA2, hashing
+              criptográfico de credenciais, gestão segura de sessões e tokens
+              JWT) aplicados diretamente à proteção de dados e autenticação de
+              usuários.
             </p>
             <div class="sec-card__tags">
-              <span>WPA2</span><span>FATEC</span><span>AIRCRACK</span
-              ><span>WIRELESS</span>
+              <span>CRIPTOGRAFIA</span><span>JWT</span><span>FATEC</span
+              ><span>DEFENSIVE DEV</span>
             </div>
           </article>
         </div>
 
         <div class="sec-divider">
-          <h3 class="sec-divider__title">TryHackMe</h3>
+          <h3 class="sec-divider__title">Prática Contínua no TryHackMe</h3>
           <p class="sec-divider__subtitle">
-            Insignias conquistadas e uma amostra das salas concluídas — o
-            restante está no perfil.
+            Resolução de desafios práticos em ambientes simulados para aprimorar
+            técnicas de segurança defensiva e ofensiva.
           </p>
         </div>
 
-        <h4 class="thm-subtitle">Insignias</h4>
+        <h4 class="thm-subtitle">Insignias Conquistadas</h4>
         <ul class="thm-badges" aria-label="Insignias TryHackMe">
           <li class="thm-badge">
             <span class="thm-badge__icon"
@@ -714,7 +812,7 @@
           </li>
         </ul>
 
-        <h4 class="thm-subtitle">Salas concluídas</h4>
+        <h4 class="thm-subtitle">Laboratórios e Salas Concluídas</h4>
         <ul class="thm-rooms" aria-label="Algumas salas TryHackMe concluídas">
           <li>
             <a
@@ -972,13 +1070,13 @@
               Habilidades técnicas
             </h2>
             <p class="section__lead">
-              Stack de produto full-stack, IA aplicada e o essencial de
-              segurança/infra que uso no dia a dia — sem lista infinita de
-              tools.
+              Stack de desenvolvimento full-stack, IA aplicada, segurança
+              defensiva (AppSec) e ferramentas de tração e crescimento.
             </p>
           </div>
 
           <div class="skills-matrix">
+            <!-- 1. Frontend -->
             <div class="skill-panel">
               <h3 class="skill-panel__label">Frontend</h3>
               <div class="skill-pills">
@@ -987,86 +1085,109 @@
                 <span>JavaScript</span>
                 <span>Tailwind CSS</span>
                 <span>React Query</span>
-                <span>Responsividade / UX-UI</span>
+                <span>HTML5 / CSS3</span>
                 <span>Figma</span>
-                <span>HTML5</span>
-                <span>CSS3</span>
+                <span>UI/UX &amp; Responsividade</span>
               </div>
             </div>
 
+            <!-- 2. Backend -->
             <div class="skill-panel">
               <h3 class="skill-panel__label">Backend</h3>
               <div class="skill-pills">
                 <span>Node.js</span>
                 <span>NestJS</span>
-                <span>APIs REST</span>
-                <span>Prisma</span>
-                <span>PostgreSQL</span>
                 <span>Express.js</span>
-                <span>Laravel</span>
+                <span>TypeScript</span>
+                <span>APIs RESTful</span>
+                <span>Prisma ORM</span>
+                <span>PostgreSQL</span>
                 <span>MongoDB</span>
                 <span>Redis</span>
+                <span>Laravel / PHP</span>
                 <span>Python</span>
-                <span>Digital Ocean</span>
               </div>
             </div>
 
+            <!-- 3. Inteligência Artificial -->
             <div class="skill-panel">
               <h3 class="skill-panel__label">Inteligência Artificial</h3>
               <div class="skill-pills">
                 <span>LangChain.js</span>
                 <span>OpenAI API</span>
-                <span>Agentes de IA</span>
+                <span>Agentes Autônomos</span>
                 <span>Tool Calling</span>
                 <span>Streaming (SSE)</span>
+                <span>Modelos Locais (Ollama)</span>
               </div>
             </div>
 
+            <!-- 4. Segurança & Redes -->
             <div class="skill-panel">
-              <h3 class="skill-panel__label">Segurança &amp; Redes</h3>
+              <h3 class="skill-panel__label">Segurança &amp; AppSec</h3>
               <div class="skill-pills">
                 <span>OWASP Top 10</span>
+                <span>Autenticação JWT / OAuth</span>
+                <span>Controle de Acesso (RBAC)</span>
                 <span>PortSwigger Academy</span>
                 <span>Burp Suite</span>
                 <span>Wireshark</span>
                 <span>Nmap</span>
                 <span>DVWA</span>
-                <span>JWT</span>
-                <span>OAuth</span>
               </div>
             </div>
 
+            <!-- 5. Growth, SEO & Analytics -->
             <div class="skill-panel">
-              <h3 class="skill-panel__label">Metodologias</h3>
+              <h3 class="skill-panel__label">Growth, SEO &amp; Analytics</h3>
+              <div class="skill-pills">
+                <span>SEO Técnico</span>
+                <span>Core Web Vitals</span>
+                <span>Google Ads</span>
+                <span>Google Analytics (GA4)</span>
+                <span>Google Tag Manager</span>
+                <span>Rastreamento de Conversões</span>
+                <span>Otimização de Conversão (CRO)</span>
+              </div>
+            </div>
+
+            <!-- 6. Infraestrutura, Cloud & QA -->
+            <div class="skill-panel">
+              <h3 class="skill-panel__label">Infraestrutura, Cloud &amp; QA</h3>
+              <div class="skill-pills">
+                <span>Docker &amp; Compose</span>
+                <span>Digital Ocean</span>
+                <span>CI/CD (GitHub Actions)</span>
+                <span>Playwright (E2E)</span>
+                <span>Integração Stripe</span>
+                <span>Integração AbacatePay</span>
+                <span>Git &amp; Git Flow</span>
+                <span>Linux / Bash</span>
+              </div>
+            </div>
+
+            <!-- 7. Metodologias & Gestão -->
+            <div class="skill-panel">
+              <h3 class="skill-panel__label">Metodologias &amp; Processos</h3>
               <div class="skill-pills">
                 <span>Scrum</span>
                 <span>Kanban</span>
-                <span>Git Flow</span>
                 <span>Jira</span>
                 <span>Trello</span>
                 <span>Notion</span>
+                <span>Code Review</span>
               </div>
             </div>
 
-            <div class="skill-panel">
-              <h3 class="skill-panel__label">Infraestrutura &amp; QA</h3>
-              <div class="skill-pills">
-                <span>Git</span>
-                <span>GitHub Actions</span>
-                <span>Docker</span>
-                <span>Playwright</span>
-                <span>CI/CD</span>
-                <span>Stripe</span>
-                <span>AbacatePay</span>
-                <span>Bash</span>
-              </div>
-            </div>
-
+            <!-- 8. Idiomas -->
             <div class="skill-panel">
               <h3 class="skill-panel__label">Idiomas</h3>
               <div class="skill-pills">
-                <span>Inglês intermediário</span>
-                <span>Espanhol intermediário</span>
+                <span>Português (Nativo)</span>
+                <span
+                  >Inglês (Intermediário - Leitura técnica/Conversação)</span
+                >
+                <span>Espanhol (Intermediário)</span>
               </div>
             </div>
           </div>
@@ -1080,31 +1201,259 @@
         aria-labelledby="edu-titulo"
       >
         <h2 id="edu-titulo" class="section__title section__title--center">
-          Formação
+          Formação Acadêmica &amp; Especializações
         </h2>
         <div class="education-row">
           <div class="education-card">
             <h3>Desenvolvimento de Sistemas</h3>
             <p>Alpha EdTech · Out 2024 — Out 2025</p>
             <p class="education-card__note">
-              Formação intensiva em desenvolvimento web full-stack; Focado para empresas.
+              Formação intensiva em engenharia web full-stack, metodologias
+              ágeis e padrões de mercado para projetos corporativos.
             </p>
           </div>
           <div class="education-card">
             <h3>Segurança da Informação</h3>
             <p>FATEC · Jan 2022 — Dez 2024</p>
             <p class="education-card__note">
-              Faculdade de Tecnologia de São Paulo — redes, criptografia e labs
-              controlados aplicados a desenvolvimento seguro.
+              Faculdade de Tecnologia de São Paulo — arquitetura de redes,
+              criptografia, auditoria e princípios de desenvolvimento seguro.
             </p>
           </div>
           <div class="education-card">
             <h3>Técnico em Desenvolvimento de Sistemas</h3>
             <p>ETEC · Ago 2021 — Dez 2022</p>
             <p class="education-card__note">
-              Escola Técnica de São Paulo — base em lógica, web e software.
+              Escola Técnica de São Paulo — base sólida em lógica de
+              programação, algoritmos e banco de dados.
             </p>
           </div>
+        </div>
+      </section>
+
+      <!-- Certificados & Conquistas -->
+      <section
+        class="section section--certificates"
+        id="certificados"
+        aria-labelledby="cert-titulo"
+      >
+        <h2 id="cert-titulo" class="section__title section__title--center">
+          Certificados &amp; Conquistas
+        </h2>
+        <p class="section__subtitle">
+          Certificações oficiais, atuações como instrutor/avaliador técnico e
+          formações especializadas.
+        </p>
+
+        <!-- 3 Certificados Principais em Destaque -->
+        <div class="certs-grid">
+          <!-- 1. TryHackMe I -->
+          <article class="cert-card">
+            <div class="cert-card__header">
+              <span class="cert-card__badge">Segurança</span>
+              <span class="cert-card__date">TryHackMe</span>
+            </div>
+            <h3 class="cert-card__title">
+              Certificação de Segurança Prática I
+            </h3>
+            <p class="cert-card__issuer">TryHackMe · ID: THM-MBGE1Z5POS</p>
+            <p class="cert-card__desc">
+              Fundamentos práticos de redes, protocolos da web, análise de
+              tráfego e mitigação de vulnerabilidades comuns em ambiente de
+              laboratório.
+            </p>
+            <a
+              href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-MBGE1Z5POS.pdf"
+              class="cert-card__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver credencial oficial
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- 2. TryHackMe II -->
+          <article class="cert-card">
+            <div class="cert-card__header">
+              <span class="cert-card__badge">Segurança</span>
+              <span class="cert-card__date">TryHackMe</span>
+            </div>
+            <h3 class="cert-card__title">
+              Certificação de Segurança Prática II
+            </h3>
+            <p class="cert-card__issuer">TryHackMe · ID: THM-QJM0O24NPN</p>
+            <p class="cert-card__desc">
+              Exploração controlada de aplicações web, análise defensiva,
+              escalonamento de privilégios em sistemas Linux e criptografia.
+            </p>
+            <a
+              href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-QJM0O24NPN.pdf"
+              class="cert-card__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver credencial oficial
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- 3. Monitoria de JS (Alpha EdTech) -->
+          <article class="cert-card">
+            <div class="cert-card__header">
+              <span class="cert-card__badge">Instrutor / Mentoria</span>
+              <span class="cert-card__date">Alpha EdTech</span>
+            </div>
+            <h3 class="cert-card__title">
+              Ministrante: Monitoria de JavaScript
+            </h3>
+            <p class="cert-card__issuer">
+              Instituto Alpha Lumen (Turma 6 Daruma)
+            </p>
+            <p class="cert-card__desc">
+              Condução de aula e mentoria prática de JavaScript para alunos de
+              tecnologia, aprofundando conceitos de lógica, ecossistema e boas
+              práticas.
+            </p>
+            <a
+              href="assets/certificates/38 Monitoria.pdf"
+              class="cert-card__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver comprovante
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+        </div>
+
+        <!-- Painel Sanfona com os outros Certificados -->
+        <div id="panel-more-certs" class="projects-more" hidden>
+          <div class="certs-grid">
+            <!-- 4. Banca Avaliadora (OBT) -->
+            <article class="cert-card">
+              <div class="cert-card__header">
+                <span class="cert-card__badge">Banca Avaliadora</span>
+                <span class="cert-card__date">OBT 2025</span>
+              </div>
+              <h3 class="cert-card__title">
+                Avaliador da Olimpíada Brasileira de Tecnologia
+              </h3>
+              <p class="cert-card__issuer">
+                Instituto Alpha Lumen / Alpha EdTech
+              </p>
+              <p class="cert-card__desc">
+                Atuação como membro da banca avaliadora técnica na Fase 2 da
+                Olimpíada Brasileira de Tecnologia (18h de avaliação de projetos
+                e soluções).
+              </p>
+              <a
+                href="assets/certificates/Fabiano Santos de Negreiros (Alpha).pdf"
+                class="cert-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver comprovante
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </article>
+
+            <!-- 5. Rocketseat -->
+            <article class="cert-card">
+              <div class="cert-card__header">
+                <span class="cert-card__badge">Desenvolvimento</span>
+                <span class="cert-card__date">Rocketseat</span>
+              </div>
+              <h3 class="cert-card__title">
+                Especialização em Desenvolvimento Web
+              </h3>
+              <p class="cert-card__issuer">Rocketseat</p>
+              <p class="cert-card__desc">
+                Formação prática com foco no ecossistema moderno de
+                desenvolvimento web, componentização e consumo eficiente de
+                APIs.
+              </p>
+              <a
+                href="https://app.rocketseat.com.br/certificates/6d2153b3-9713-4793-b333-7d3f5591a84d"
+                class="cert-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver credencial oficial
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </article>
+
+            <!-- 6. Python Institute & Cisco -->
+            <article class="cert-card">
+              <div class="cert-card__header">
+                <span class="cert-card__badge">Linguagens &amp; OOP</span>
+                <span class="cert-card__date">Cisco / FATEC</span>
+              </div>
+              <h3 class="cert-card__title">
+                PCAP: Programming Essentials in Python
+              </h3>
+              <p class="cert-card__issuer">
+                Cisco Networking Academy &amp; OpenEDG
+              </p>
+              <p class="cert-card__desc">
+                Estruturas de dados, algoritmos, orientação a objetos (OOP),
+                processamento de arquivos binários/texto e resolução de
+                problemas computacionais.
+              </p>
+              <a
+                href="assets/certificates/FabianoSantos de Negrei-22022 - SEGURANÇ-certificate.pdf"
+                class="cert-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver certificado
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </article>
+
+            <!-- 7. VTEX DAY -->
+            <article class="cert-card">
+              <div class="cert-card__header">
+                <span class="cert-card__badge">Evento &amp; Mercado</span>
+                <span class="cert-card__date">VTEX DAY 2025</span>
+              </div>
+              <h3 class="cert-card__title">
+                Imersão em Tecnologia &amp; E-commerce
+              </h3>
+              <p class="cert-card__issuer">VTEX</p>
+              <p class="cert-card__desc">
+                Participação no maior evento de transformação digital e
+                tecnologia para comércio digital da América Latina.
+              </p>
+              <a
+                href="assets/certificates/VTEX DAY 2025 - Certificado Insc. Num. 41804.pdf"
+                class="cert-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver certificado
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </article>
+          </div>
+        </div>
+
+        <!-- Botão Toggle de Certificados -->
+        <div class="projects-toggle-wrap">
+          <button
+            type="button"
+            class="projects-expand"
+            id="certs-list-toggle"
+            aria-expanded="false"
+            aria-controls="panel-more-certs"
+          >
+            <span class="certs-toggle__label">Ver outros certificados</span>
+            <i
+              class="fa-solid fa-chevron-down certs-toggle__icon"
+              aria-hidden="true"
+            ></i>
+          </button>
         </div>
       </section>
 
@@ -1115,18 +1464,18 @@
         aria-labelledby="cont-titulo"
       >
         <h2 id="cont-titulo" class="contact-aside__title">
-          Vamos construir algo juntos.
+          Vamos construir algo sólido juntos?
         </h2>
         <p class="contact-aside__lead">
-          Se quiser conversar sobre um projeto, vaga ou parceria, envie uma
-          mensagem.
+          Disponível para oportunidades como desenvolvedor, projetos de
+          engenharia web ou consultoria técnica.
         </p>
         <div class="contact-blocks">
           <div class="contact-block-inline">
             <div class="contact-block">
               <i class="fa-solid fa-envelope" aria-hidden="true"></i>
               <div>
-                <span class="contact-block__label">E-mail</span>
+                <span class="contact-block__label">E-mail Direto</span>
                 <a href="mailto:fsfabianosantos03@gmail.com"
                   >fsfabianosantos03@gmail.com</a
                 >
@@ -1135,8 +1484,8 @@
             <div class="contact-block">
               <i class="fa-solid fa-phone" aria-hidden="true"></i>
               <div>
-                <span class="contact-block__label">Telefone</span>
-                <a href="tel:+5511952982467">(11) 95298-2467</a>
+                <span class="contact-block__label">Telefone / WhatsApp</span>
+                <span>(11) 95298-2467</span>
               </div>
             </div>
           </div>
@@ -1145,14 +1494,14 @@
             <div class="contact-block">
               <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
               <div>
-                <span class="contact-block__label">Local</span>
-                <span>São Paulo (SP)</span>
+                <span class="contact-block__label">Localização</span>
+                <span>São Paulo, SP · Brasil</span>
               </div>
             </div>
             <div class="contact-block">
               <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
               <div>
-                <span class="contact-block__label">Social</span>
+                <span class="contact-block__label">Perfis Profissionais</span>
                 <a
                   href="https://github.com/santosfabin"
                   target="_blank"
@@ -1191,6 +1540,8 @@
           <a href="#projetos">Projetos</a>
           <a href="#seguranca">Segurança</a>
           <a href="#habilidades">Habilidades</a>
+          <a href="#formacao">Formação</a>
+          <a href="#certificados">Certificados</a>
           <a href="#contato">Contato</a>
         </nav>
         <p class="site-footer__copy">
@@ -1199,7 +1550,9 @@
       </div>
       <hr class="site-footer__rule" />
       <div class="site-footer__bottom">
-        <p class="site-footer__built">Feito com HTML, CSS e JavaScript.</p>
+        <p class="site-footer__built">
+          Construído com HTML, CSS e JavaScript sem dependências.
+        </p>
       </div>
     </footer>
 
