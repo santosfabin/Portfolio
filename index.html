@@ -336,12 +336,46 @@
           Projetos em destaque
         </h2>
         <p class="section__subtitle">
-          Aplicações com foco em arquitetura de software, inteligência
-          artificial aplicada e desenvolvimento seguro.
+          Aplicações e estudos com foco em segurança de aplicações (AppSec),
+          arquitetura de software e inteligência artificial.
         </p>
 
         <div class="projects-grid projects-grid--featured">
-          <!-- Projeto 1: Garimpo (IA) -->
+          <!-- Projeto 1: PortSwigger Labs (NOVO - 1º LUGAR) -->
+          <article class="project-card">
+            <div class="project-card__media">
+              <img
+                src="assets/Portswigger/posrtswigger.png"
+                alt="Interface do Garimpo — assistente de cinema com IA"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-card__tags">
+              <span>APPSEC</span><span>BURP SUITE</span><span>PORTSWIGGER</span
+              ><span>OWASP TOP 10</span><span>WRITE-UPS</span>
+            </div>
+            <h3 class="project-card__title">
+              PortSwigger Web Security Academy — Labs &amp; Write-ups
+            </h3>
+            <p class="project-card__desc">
+              Repositório com a documentação detalhada, metodologia de resolução
+              e análise de vulnerabilidades dos laboratórios da PortSwigger.
+              Aborda exploração controlada e mitigação de falhas web críticas
+              como SQL Injection, Cross-Site Scripting (XSS), CSRF, SSRF e
+              quebra de autenticação.
+            </p>
+            <div class="project-card__actions">
+              <a
+                href="https://github.com/santosfabin/portswigger"
+                class="btn btn--outline btn--sm"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i> Código no GitHub</a
+              >
+            </div>
+          </article>
+
+          <!-- Projeto 2: Garimpo (IA) -->
           <article class="project-card">
             <div class="project-card__media">
               <img
@@ -374,7 +408,7 @@
             </div>
           </article>
 
-          <!-- Projeto 2: AssetCore -->
+          <!-- Projeto 3: AssetCore -->
           <article class="project-card">
             <div class="project-card__media">
               <div class="project-card__media-mark" aria-hidden="true">
@@ -405,41 +439,6 @@
               >
             </div>
           </article>
-
-          <!-- Projeto 3: API Login -->
-          <article class="project-card">
-            <div class="project-card__media">
-              <div class="project-card__media-mark" aria-hidden="true">
-                <span class="project-card__media-mark-label"
-                  >Auth Microservice</span
-                >
-                <span class="project-card__media-mark-sub"
-                  >JWT · Hashing Seguro · Docker Compose · PostgreSQL</span
-                >
-              </div>
-            </div>
-            <div class="project-card__tags">
-              <span>NODE.JS</span><span>EXPRESS</span><span>JWT</span
-              ><span>POSTGRESQL</span><span>DOCKER</span>
-            </div>
-            <h3 class="project-card__title">
-              Microsserviço de Autenticação Segura
-            </h3>
-            <p class="project-card__desc">
-              API RESTful voltada à segurança de acesso, com geração e validação
-              de tokens JWT, políticas de hashing de senha com salt e
-              orquestração de ambiente isolado via Docker Compose.
-            </p>
-            <div class="project-card__actions">
-              <a
-                href="https://github.com/santosfabin/API_Login_com_docker_compose"
-                class="btn btn--outline btn--sm"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fab fa-github"></i> Código no GitHub</a
-              >
-            </div>
-          </article>
         </div>
 
         <div id="panel-more-projects" class="projects-more" hidden>
@@ -448,6 +447,41 @@
               Experimentos e outros projetos
             </h3>
             <div class="projects-grid projects-grid--more">
+              <!-- API Login -->
+              <article class="project-card">
+                <div class="project-card__media">
+                  <div class="project-card__media-mark" aria-hidden="true">
+                    <span class="project-card__media-mark-label"
+                      >Auth Microservice</span
+                    >
+                    <span class="project-card__media-mark-sub"
+                      >JWT · Hashing Seguro · Docker Compose · PostgreSQL</span
+                    >
+                  </div>
+                </div>
+                <div class="project-card__tags">
+                  <span>NODE.JS</span><span>EXPRESS</span><span>JWT</span
+                  ><span>POSTGRESQL</span><span>DOCKER</span>
+                </div>
+                <h3 class="project-card__title">
+                  Microsserviço de Autenticação Segura
+                </h3>
+                <p class="project-card__desc">
+                  API RESTful voltada à segurança de acesso, com geração e
+                  validação de tokens JWT, políticas de hashing de senha com
+                  salt e orquestração de ambiente isolado via Docker Compose.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/santosfabin/API_Login_com_docker_compose"
+                    class="btn btn--outline btn--sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> Código no GitHub</a
+                  >
+                </div>
+              </article>
+
               <article class="project-card">
                 <div class="project-card__media">
                   <img
@@ -1245,9 +1279,33 @@
           formações especializadas.
         </p>
 
-        <!-- 3 Certificados Principais em Destaque -->
+        <!-- Certificados Principais em Destaque -->
         <div class="certs-grid">
-          <!-- 1. TryHackMe I -->
+          <!-- 1. IBM SkillsBuild (NOVO) -->
+          <article class="cert-card">
+            <div class="cert-card__header">
+              <span class="cert-card__badge">Segurança</span>
+              <span class="cert-card__date">IBM</span>
+            </div>
+            <h3 class="cert-card__title">Cybersecurity Fundamentals</h3>
+            <p class="cert-card__issuer">IBM SkillsBuild</p>
+            <p class="cert-card__desc">
+              Fundamentos de cibersegurança, conceitos de resposta a incidentes,
+              vetores de ataque, criptografia, defesa em camadas e proteção de
+              dados.
+            </p>
+            <a
+              href="https://www.credly.com/badges/8a8ab663-9cb0-4f29-a0ed-8727b9fdcea9/public_url"
+              class="cert-card__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver credencial oficial
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- 2. TryHackMe I -->
           <article class="cert-card">
             <div class="cert-card__header">
               <span class="cert-card__badge">Segurança</span>
@@ -1273,7 +1331,7 @@
             </a>
           </article>
 
-          <!-- 2. TryHackMe II -->
+          <!-- 3. TryHackMe II -->
           <article class="cert-card">
             <div class="cert-card__header">
               <span class="cert-card__badge">Segurança</span>
@@ -1297,40 +1355,39 @@
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
           </article>
-
-          <!-- 3. Monitoria de JS (Alpha EdTech) -->
-          <article class="cert-card">
-            <div class="cert-card__header">
-              <span class="cert-card__badge">Instrutor / Mentoria</span>
-              <span class="cert-card__date">Alpha EdTech</span>
-            </div>
-            <h3 class="cert-card__title">
-              Ministrante: Monitoria de JavaScript
-            </h3>
-            <p class="cert-card__issuer">
-              Instituto Alpha Lumen (Turma 6 Daruma)
-            </p>
-            <p class="cert-card__desc">
-              Condução de aula e mentoria prática de JavaScript para alunos de
-              tecnologia, aprofundando conceitos de lógica, ecossistema e boas
-              práticas.
-            </p>
-            <a
-              href="assets/certificates/38 Monitoria.pdf"
-              class="cert-card__link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver comprovante
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </article>
         </div>
 
         <!-- Painel Sanfona com os outros Certificados -->
         <div id="panel-more-certs" class="projects-more" hidden>
           <div class="certs-grid">
-            <!-- 4. Banca Avaliadora (OBT) -->
+            <!-- 4. Monitoria de JS (Alpha EdTech) -->
+            <article class="cert-card">
+              <div class="cert-card__header">
+                <span class="cert-card__badge">Instrutor / Mentoria</span>
+                <span class="cert-card__date">Alpha EdTech</span>
+              </div>
+              <h3 class="cert-card__title">
+                Ministrante: Monitoria de JavaScript
+              </h3>
+              <p class="cert-card__issuer">
+                Instituto Alpha Lumen (Turma 6 Daruma)
+              </p>
+              <p class="cert-card__desc">
+                Condução de aula e mentoria prática de JavaScript para alunos de
+                tecnologia, aprofundando conceitos de lógica, ecossistema e boas
+                práticas.
+              </p>
+              <a
+                href="assets/certificates/38 Monitoria.pdf"
+                class="cert-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver comprovante
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </article>
+            <!-- 5. Banca Avaliadora (OBT) -->
             <article class="cert-card">
               <div class="cert-card__header">
                 <span class="cert-card__badge">Banca Avaliadora</span>
@@ -1358,7 +1415,7 @@
               </a>
             </article>
 
-            <!-- 5. Rocketseat -->
+            <!-- 6. Rocketseat -->
             <article class="cert-card">
               <div class="cert-card__header">
                 <span class="cert-card__badge">Desenvolvimento</span>
@@ -1384,11 +1441,11 @@
               </a>
             </article>
 
-            <!-- 6. Python Institute & Cisco -->
+            <!-- 7. Python Institute & Cisco -->
             <article class="cert-card">
               <div class="cert-card__header">
                 <span class="cert-card__badge">Linguagens &amp; OOP</span>
-                <span class="cert-card__date">Cisco / FATEC</span>
+                <span class="cert-card__date">Cisco</span>
               </div>
               <h3 class="cert-card__title">
                 PCAP: Programming Essentials in Python
@@ -1412,7 +1469,7 @@
               </a>
             </article>
 
-            <!-- 7. VTEX DAY -->
+            <!-- 8. VTEX DAY -->
             <article class="cert-card">
               <div class="cert-card__header">
                 <span class="cert-card__badge">Evento &amp; Mercado</span>
