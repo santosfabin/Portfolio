@@ -1,8 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Textos que dependem do idioma da página (definido no <html lang>)
+  const lang = document.documentElement.lang.toLowerCase().startsWith('en')
+    ? 'en'
+    : 'pt-BR';
+
+  const strings = {
+    'pt-BR': {
+      openMenu: 'Abrir menu',
+      closeMenu: 'Fechar menu',
+      projectsMore: 'Ver outros projetos',
+      projectsLess: 'Ver menos projetos',
+      certsMore: 'Ver outros certificados',
+      certsLess: 'Ver menos certificados',
+    },
+    en: {
+      openMenu: 'Open menu',
+      closeMenu: 'Close menu',
+      projectsMore: 'View other projects',
+      projectsLess: 'View fewer projects',
+      certsMore: 'View other certificates',
+      certsLess: 'View fewer certificates',
+    },
+  };
+
+  const t = strings[lang];
+
   // Atualiza o ano no rodapé
   const yearEl = document.getElementById('year');
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
+  }
+
+  // Nav flutuante que cola no topo ao rolar
+  const siteNav = document.querySelector('.site-nav');
+  if (siteNav) {
+    const updateNav = () => {
+      siteNav.classList.toggle('is-stuck', window.scrollY > 8);
+    };
+    updateNav();
+    window.addEventListener('scroll', updateNav, { passive: true });
   }
 
   // Menu Mobile
@@ -12,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const setOpen = (open) => {
       menu.classList.toggle('is-open', open);
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+      toggle.setAttribute('aria-label', open ? t.closeMenu : t.openMenu);
     };
 
     toggle.addEventListener('click', () => {
@@ -22,6 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => setOpen(false));
     });
+
+    setOpen(false);
   }
 
   // Sanfona de Outros Projetos
@@ -33,15 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const setListOpen = (open) => {
       listPanel.hidden = !open;
       listToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      listLabel.textContent = open
-        ? 'Ver menos projetos'
-        : 'Ver outros projetos';
+      listLabel.textContent = open ? t.projectsLess : t.projectsMore;
       listIcon.classList.toggle('fa-chevron-down', !open);
       listIcon.classList.toggle('fa-chevron-up', open);
     };
     listToggle.addEventListener('click', () => {
       setListOpen(listPanel.hidden);
     });
+    setListOpen(false);
   }
 
   // Sanfona de Outros Certificados
@@ -53,14 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const setCertOpen = (open) => {
       certPanel.hidden = !open;
       certToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      certLabel.textContent = open
-        ? 'Ver menos certificados'
-        : 'Ver outros certificados';
+      certLabel.textContent = open ? t.certsLess : t.certsMore;
       certIcon.classList.toggle('fa-chevron-down', !open);
       certIcon.classList.toggle('fa-chevron-up', open);
     };
     certToggle.addEventListener('click', () => {
       setCertOpen(certPanel.hidden);
     });
+    setCertOpen(false);
   }
 });

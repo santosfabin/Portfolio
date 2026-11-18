@@ -6,6 +6,15 @@ Este repositório contém o código-fonte da minha página de portfólio, onde a
 
 ---
 
+## 🌍 Idiomas
+
+- 🇧🇷 **Português (pt-BR):** [index.html](index.html) — `/Portfolio/`
+- 🇺🇸 **English (en):** [en/index.html](en/index.html) — `/Portfolio/en/`
+
+As versões são páginas estáticas independentes (o conteúdo traduzido não depende de JavaScript), com `hreflang` para SEO e um seletor **PT | EN** no menu. O `script.js` usa o `<html lang>` para ajustar os rótulos dinâmicos (menus e sanfonas).
+
+---
+
 ## 👤 Fabiano Vieira dos Santos
 
 - Desenvolvedor Full-Stack · React · TypeScript · Node.js · IA aplicada
